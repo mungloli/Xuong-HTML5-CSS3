@@ -1,0 +1,35 @@
+.login {
+    .img-register {
+        opacity: 0;
+        transition:all .3s ease;
+    }
+    .form-login {
+        z-index: 2;
+        opacity: 1;
+        transition:all .3s ease;
+    }
+    .form-register {
+        z-index: 1;
+        opacity: 0;
+        transition:all .3s ease;
+    }
+}
+.login.register {
+
+    .img-register {
+        opacity: 1;
+    }
+    .btn-login {
+        background-color: transparent;
+    }
+    .btn-register {
+        background-color: #49BBBD;
+    }
+    .form-login {
+        opacity: 0;
+    }
+    .form-register {
+        z-index: 3;
+        opacity: 1;
+    }
+}

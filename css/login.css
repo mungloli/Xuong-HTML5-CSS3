@@ -1,0 +1,31 @@
+.login .img-register {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.login .form-login {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.login .form-register {
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.login.register .img-register {
+  opacity: 1;
+}
+.login.register .btn-login {
+  background-color: transparent;
+}
+.login.register .btn-register {
+  background-color: #49BBBD;
+}
+.login.register .form-login {
+  opacity: 0;
+}
+.login.register .form-register {
+  z-index: 3;
+  opacity: 1;
+}/*# sourceMappingURL=login.css.map */

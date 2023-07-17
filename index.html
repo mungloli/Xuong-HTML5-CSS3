@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="font-['Poppins']">
+    <div class="bg-[url('./images/home/header-bg.png')] bg-cover bg-no-repeat bg-bottom pb-4 min-h-screen">
+        <header class="py-7">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap items-center justify-between">
+                    <img class="w-28" src="./images/home/logo.png" alt="">
+                    <button class="btn-show-menu hidden text-xl w-12 h-12 bg-white text-[#5b5b5b] rounded">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <nav class="flex items-center">
+                        <ul class="flex items-center">
+                            <li>
+                                <a href="#" class="text-xl text-white mr-12">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-xl text-white mr-12">Courses</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-xl text-white mr-12">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-xl text-white mr-12">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-xl text-white mr-12">About Us</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="./login.html" class="inline-block text-center leading-[48px] text-xl w-32 h-12 bg-white text-[#5b5b5b] rounded-full mr-6">Login</a>
+                            <a href="./login.html" class="inline-block text-center leading-[48px] text-xl w-32 h-12 bg-white/30 text-white rounded-full">Sign Up</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- banner -->
+        <div>
+            <div class="container mx-auto">
+                <div class="flex flex-wrap items-center">
+                    <div class="lg:w-1/2 lg:pr-16">
+                        <h1 class="text-5xl text-white font-semibold leading-snug">
+                            <span class="text-[#F48C06]">Studying</span>
+                            Online is now much easier
+                        </h1>
+                        <p class="text-lg text-white my-8 font-light">
+                            TOTC is an interesting platform that will teach you in more an interactive way
+                        </p>
+                        <div class="flex md:items-center flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
+                            <button class="text-xl w-40 h-14 bg-white/30 text-white rounded-full">Join for free</button>
+                            <button class="text-xl w-12 h-12 bg-white text-[#23bdee] rounded-full"><i
+                                    class="fa-solid fa-play"></i></button>
+                            <p class="text-[#252641] text-lg">Watch how it works</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 relative">
+                        <img class="object-cover w-[80%] mx-auto"
+                            src="./images/home/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min.png" alt="">
+                        <div class="absolute left-0 top-40 hidden sm:block">
+                            <div class="flex items-center p-4 bg-white/80 rounded-2xl backdrop-blur">
+                                <img class="w-10 h-10" src="./images/home/Group 6.png" alt="">
+                                <div class="ml-5">
+                                    <p class="text-lg">250k</p>
+                                    <p class="text-sm">Assisted Student</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-0 top-96 hidden sm:block">
+                            <div class="flex p-4 bg-white/80 rounded-2xl backdrop-blur">
+                                <img class="w-10 h-10" src="./images/home/Frame 56.png" alt="">
+                                <div class="ml-5">
+                                    <p class="text-lg">User Experience Class</p>
+                                    <p class="text-sm">Today at 12.00 PM</p>
+                                    <button class="text-base px-8 py-2 bg-[#d8567e] text-white rounded-full mt-4">Join
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute right-5 top-28 hidden sm:block">
+                            <img class="w-24 h-24" src="./images/home/Group 9.png" alt="">
+                        </div>
+                        <div class="absolute right-0 top-80 hidden sm:block">
+                            <div class="flex items-center p-4 bg-white/80 rounded-2xl backdrop-blur">
+                                <img class="w-10 h-10" src="./images/home/Frame 57.png" alt="">
+                                <div class="ml-5">
+                                    <p class="text-lg">Congratulations</p>
+                                    <p class="text-sm">Your admission completed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Success -->
+    <div class="py-24">
+        <div class="container mx-auto">
+            <div class="text-center max-w-[750px] mx-auto">
+                <h2 class="text-4xl font-bold mb-4">Our Success</h2>
+                <p>
+                    Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et
+                    pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 mt-16">
+                <div class="text-center">
+                    <h4 class="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#136CB5] to-[#49BBBD]">
+                        <span class="counter">15</span>K+
+                    </h4>
+                    <p class="text-xl">Students</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#136CB5] to-[#49BBBD]">
+                        <span class="counter">75</span>%
+                    </h4>
+                    <p class="text-xl">Total success</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#136CB5] to-[#49BBBD]">
+                        <span class="counter">35</span>
+                    </h4>
+                    <p class="text-xl">Main questions</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#136CB5] to-[#49BBBD]">
+                        <span class="counter">26</span>
+                    </h4>
+                    <p class="text-xl">Chief experts</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#136CB5] to-[#49BBBD]">
+                        <span class="counter">16</span>
+                    </h4>
+                    <p class="text-xl">Years of experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All-In-One Cloud Software. -->
+    <div class="pb-24">
+        <div class="container mx-auto">
+            <!-- title -->
+            <div class="text-center max-w-[750px] mx-auto">
+                <h2 class="text-3xl text-[#2F327D] font-bold mb-4">All-In-One <span class="text-[#00CBB8]">Cloud
+                        Software.</span></h2>
+                <p class="text-[#696984]">
+                    TOTC is one powerful online software suite that combines all the tools needed to run a successful
+                    school or office.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16 mt-32">
+                <div
+                    class="relative text-center pt-28 px-12 pb-12 shadow-[0_10px_60px_0px_rgba(38,45,118,0.08)] rounded-2xl">
+                    <h4 class="text-2xl text-[#2F327D]">Online Billing, Invoicing, & Contracts</h4>
+                    <p class="mt-4 text-[#696984]">
+                        Simple and secure control of your organization's financial and legal transactions. Send
+                        customized invoices and contracts
+                    </p>
+                    <div
+                        class="bg-[#5B72EE] absolute bottom-full right-1/2 translate-x-1/2 translate-y-1/2 w-24 h-24 flex items-center justify-center rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="46" viewBox="0 0 33 46" fill="none">
+                            <g clip-path="url(#clip0_6_862)">
+                                <path
+                                    d="M24.75 23H8.25V28.75H24.75V23ZM32.3984 9.43359L23.9852 0.628906C23.5984 0.224609 23.0742 0 22.5242 0H22V11.5H33V10.952C33 10.3859 32.7852 9.83789 32.3984 9.43359ZM19.25 12.2188V0H2.0625C0.919531 0 0 0.961328 0 2.15625V43.8438C0 45.0387 0.919531 46 2.0625 46H30.9375C32.0805 46 33 45.0387 33 43.8438V14.375H21.3125C20.1781 14.375 19.25 13.4047 19.25 12.2188ZM5.5 6.46875C5.5 6.07164 5.80766 5.75 6.1875 5.75H13.0625C13.4423 5.75 13.75 6.07164 13.75 6.46875V7.90625C13.75 8.30336 13.4423 8.625 13.0625 8.625H6.1875C5.80766 8.625 5.5 8.30336 5.5 7.90625V6.46875ZM5.5 12.2188C5.5 11.8216 5.80766 11.5 6.1875 11.5H13.0625C13.4423 11.5 13.75 11.8216 13.75 12.2188V13.6562C13.75 14.0534 13.4423 14.375 13.0625 14.375H6.1875C5.80766 14.375 5.5 14.0534 5.5 13.6562V12.2188ZM27.5 39.5312C27.5 39.9284 27.1923 40.25 26.8125 40.25H19.9375C19.5577 40.25 19.25 39.9284 19.25 39.5312V38.0938C19.25 37.6966 19.5577 37.375 19.9375 37.375H26.8125C27.1923 37.375 27.5 37.6966 27.5 38.0938V39.5312ZM27.5 21.5625V30.1875C27.5 30.9817 26.8847 31.625 26.125 31.625H6.875C6.11531 31.625 5.5 30.9817 5.5 30.1875V21.5625C5.5 20.7683 6.11531 20.125 6.875 20.125H26.125C26.8847 20.125 27.5 20.7683 27.5 21.5625Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_6_862">
+                                    <rect width="33" height="46" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div
+                    class="relative text-center pt-28 px-12 pb-12 shadow-[0_10px_60px_0px_rgba(38,45,118,0.08)] rounded-2xl">
+                    <h4 class="text-2xl text-[#2F327D]">Easy Scheduling & Attendance Tracking</h4>
+                    <p class="mt-4 text-[#696984]">
+                        Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of
+                        student attendance
+                    </p>
+                    <div
+                        class="bg-[#00CBB8] absolute bottom-full right-1/2 translate-x-1/2 translate-y-1/2 w-24 h-24 flex items-center justify-center rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <g clip-path="url(#clip0_6_819)">
+                                <path
+                                    d="M12 0C11.0532 0 10.2857 0.767511 10.2857 1.71432V5.14285H13.7142V1.71432C13.7142 0.767511 12.9467 0 12 0Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M36 0C35.0532 0 34.2856 0.767511 34.2856 1.71432V5.14285H37.7142V1.71432C37.7143 0.767511 36.9468 0 36 0Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M42.8571 5.14307H37.7143V12.0002C37.7143 12.947 36.9468 13.7146 36 13.7146C35.0532 13.7146 34.2857 12.947 34.2857 12.0002V5.14307H13.7142V12.0002C13.7142 12.947 12.9467 13.7146 11.9999 13.7146C11.0531 13.7146 10.2856 12.947 10.2856 12.0002V5.14307H5.14285C2.30253 5.14307 0 7.4456 0 10.2859V42.8574C0 45.6977 2.30253 48.0002 5.14285 48.0002H42.8571C45.6975 48.0002 48 45.6977 48 42.8574V10.2859C48 7.4456 45.6975 5.14307 42.8571 5.14307ZM44.5714 42.8574C44.5714 43.8042 43.8039 44.5717 42.857 44.5717H5.14285C4.19605 44.5717 3.42854 43.8042 3.42854 42.8574V20.5716H44.5714V42.8574Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M13.7142 24H10.2857C9.3389 24 8.57139 24.7675 8.57139 25.7143C8.57139 26.6611 9.3389 27.4286 10.2857 27.4286H13.7142C14.661 27.4286 15.4286 26.6611 15.4286 25.7143C15.4286 24.7675 14.661 24 13.7142 24Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M25.7143 24H22.2857C21.3389 24 20.5714 24.7675 20.5714 25.7143C20.5714 26.6611 21.3389 27.4286 22.2857 27.4286H25.7143C26.6611 27.4286 27.4286 26.6611 27.4286 25.7143C27.4286 24.7675 26.6611 24 25.7143 24Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M37.7143 24H34.2858C33.339 24 32.5714 24.7675 32.5714 25.7143C32.5714 26.6611 33.339 27.4286 34.2858 27.4286H37.7143C38.6611 27.4286 39.4286 26.6611 39.4286 25.7143C39.4286 24.7675 38.661 24 37.7143 24Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M13.7142 30.8569H10.2857C9.3389 30.8569 8.57139 31.6244 8.57139 32.5713C8.57139 33.5181 9.3389 34.2856 10.2857 34.2856H13.7142C14.661 34.2856 15.4286 33.5181 15.4286 32.5713C15.4286 31.6244 14.661 30.8569 13.7142 30.8569Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M25.7143 30.8569H22.2857C21.3389 30.8569 20.5714 31.6244 20.5714 32.5713C20.5714 33.5181 21.3389 34.2856 22.2857 34.2856H25.7143C26.6611 34.2856 27.4286 33.5181 27.4286 32.5713C27.4286 31.6244 26.6611 30.8569 25.7143 30.8569Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M37.7143 30.8569H34.2858C33.339 30.8569 32.5714 31.6244 32.5714 32.5713C32.5714 33.5181 33.339 34.2856 34.2858 34.2856H37.7143C38.6611 34.2856 39.4286 33.5181 39.4286 32.5713C39.4285 31.6244 38.661 30.8569 37.7143 30.8569Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M13.7142 37.7144H10.2857C9.3389 37.7144 8.57139 38.4819 8.57139 39.4287C8.57139 40.3755 9.3389 41.1429 10.2857 41.1429H13.7142C14.661 41.1429 15.4286 40.3754 15.4286 39.4286C15.4286 38.4818 14.661 37.7144 13.7142 37.7144Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M25.7143 37.7144H22.2857C21.3389 37.7144 20.5714 38.4819 20.5714 39.4287C20.5714 40.3755 21.3389 41.143 22.2857 41.143H25.7143C26.6611 41.143 27.4286 40.3755 27.4286 39.4287C27.4286 38.4819 26.6611 37.7144 25.7143 37.7144Z"
+                                    fill="#F5F5FC" />
+                                <path
+                                    d="M37.7143 37.7144H34.2858C33.339 37.7144 32.5714 38.4819 32.5714 39.4287C32.5714 40.3755 33.339 41.143 34.2858 41.143H37.7143C38.6611 41.143 39.4286 40.3755 39.4286 39.4287C39.4286 38.4819 38.661 37.7144 37.7143 37.7144Z"
+                                    fill="#F5F5FC" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_6_819">
+                                    <rect width="48" height="48" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div
+                    class="relative text-center pt-28 px-12 pb-12 shadow-[0_10px_60px_0px_rgba(38,45,118,0.08)] rounded-2xl">
+                    <h4 class="text-2xl text-[#2F327D]">Customer Tracking</h4>
+                    <p class="mt-4 text-[#696984]">
+                        Automate and track emails to individuals or groups. Skilline’s built-in system helps organize
+                        your organization
+                    </p>
+                    <div
+                        class="bg-[#29B9E7] absolute bottom-full right-1/2 translate-x-1/2 translate-y-1/2 w-24 h-24 flex items-center justify-center rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="44" viewBox="0 0 55 44" fill="none">
+                            <path
+                                d="M8.25 19.25C11.2836 19.25 13.75 16.7836 13.75 13.75C13.75 10.7164 11.2836 8.25 8.25 8.25C5.21641 8.25 2.75 10.7164 2.75 13.75C2.75 16.7836 5.21641 19.25 8.25 19.25ZM46.75 19.25C49.7836 19.25 52.25 16.7836 52.25 13.75C52.25 10.7164 49.7836 8.25 46.75 8.25C43.7164 8.25 41.25 10.7164 41.25 13.75C41.25 16.7836 43.7164 19.25 46.75 19.25ZM49.5 22H44C42.4875 22 41.1211 22.6102 40.1242 23.5984C43.5875 25.4977 46.0453 28.9266 46.5781 33H52.25C53.7711 33 55 31.7711 55 30.25V27.5C55 24.4664 52.5336 22 49.5 22ZM27.5 22C32.8195 22 37.125 17.6945 37.125 12.375C37.125 7.05547 32.8195 2.75 27.5 2.75C22.1805 2.75 17.875 7.05547 17.875 12.375C17.875 17.6945 22.1805 22 27.5 22ZM34.1 24.75H33.3867C31.5992 25.6094 29.6141 26.125 27.5 26.125C25.3859 26.125 23.4094 25.6094 21.6133 24.75H20.9C15.4344 24.75 11 29.1844 11 34.65V37.125C11 39.4023 12.8477 41.25 15.125 41.25H39.875C42.1523 41.25 44 39.4023 44 37.125V34.65C44 29.1844 39.5656 24.75 34.1 24.75ZM14.8758 23.5984C13.8789 22.6102 12.5125 22 11 22H5.5C2.46641 22 0 24.4664 0 27.5V30.25C0 31.7711 1.22891 33 2.75 33H8.41328C8.95469 28.9266 11.4125 25.4977 14.8758 23.5984Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- What is TOTC? -->
+    <div class="pb-24">
+        <div class="container mx-auto">
+            <!-- title -->
+            <div class="text-center max-w-[750px] mx-auto">
+                <h2 class="text-3xl text-[#2F327D] font-bold mb-4">What is <span class="text-[#00CBB8]">TOTC?
+                    </span></h2>
+                <p class="text-[#696984]">
+                    TOTC is a platform that allows educators to create online classes whereby they can store the course
+                    materials online; manage assignments, quizzes and exams; monitor due dates; grade results and
+                    provide students with feedback all in one place.
+                </p>
+            </div>
+            <div class="lg:px-20 grid sm:grid-cols-2 grid-cols-1 lg:gap-20 md:gap-12 gap-6 mt-16">
+                <div class="relative">
+                    <img class="brightness-75" src="./images/home/Rectangle 19.png" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <h4 class="text-3xl font-semibold ">FOR INSTRUCTORS</h4>
+                            <button class="text-lg p-3 border-white rounded-full mt-3" style="border: 1px solid;">Start
+                                a class today</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img class="brightness-75" src="./images/home/Rectangle 21.png" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <h4 class="text-3xl font-semibold ">FOR STUDENTS</h4>
+                            <button class="text-lg p-3 border-white rounded-full mt-3 bg-[#23BDEEE5]">Enter access
+                                code</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Everything you can do in a physical classroom, you can do with TOTC -->
+    <div class="pb-24">
+        <div class="container mx-auto">
+            <div class="grid gap-14 md:grid-cols-2 grid-cols-1 items-center">
+                <!-- title -->
+                <div class="relative">
+                    <div class="relative z-10">
+                        <h2 class="text-2xl text-[#2F327D] mb-4 leading-normal">Everything you can do in a physical
+                            classroom, <span class="text-[#00CBB8]">you can do with TOTC
+                            </span></h2>
+                        <p class="text-[#696984] leading-relaxed">
+                            TOTC's school management software helps traditional and online schools manage scheduling,
+                            attendance, payments and virtual classrooms all in one secure cloud-based system.
+                        </p>
+                        <a class="mt-7 text-sm text-[#696984] underline" href="#">Learn more</a>
+                    </div>
+                    <img class="w-16 absolute top-[-20px] left-[-20px]" src="./images/home/Ellipse-green.png" alt="">
+                    <img class="w-6 absolute bottom-1/4 right-[10px]" src="./images/home/Ellipse-green.png" alt="">
+                </div>
+                <div class="relative">
+                    <div class="relative z-10">
+                        <img src="./images/home/confident-teacher-explaining-lesson-pupils 1.png" alt="">
+                        <button
+                            class="text-xl text-[#23BDEE] bg-white h-16 w-16 rounded-full absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"><i
+                                class="fa-solid fa-play"></i></button>
+                    </div>
+                    <img class="w-1/4 absolute top-[-20px] left-[-20px]" src="./images/home/Rectangle 18.png" alt="">
+                    <img class="w-1/3 absolute bottom-[-20px] right-[-20px]" src="./images/home/Rectangle 17.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Features -->
+    <div class="pb-24">
+        <div class="container mx-auto">
+            <!-- title -->
+            <div class="text-center max-w-[750px] mx-auto">
+                <h2 class="text-3xl text-[#2F327D] font-bold mb-4">Our <span class="text-[#00CBB8]">Features</span></h2>
+                <p class="text-[#696984]">
+                    This very extraordinary feature, can make learning activities more efficient
+                </p>
+            </div>
+            <!--  -->
+            <div class="flex flex-wrap lg:flex-nowrap gap-14 items-center mt-14">
+                <div class="lg:w-3/5">
+                    <img src="./images/home/Frame 59.png" alt="">
+                </div>
+                <div class="lg:w-2/5">
+                    <div class="relative z-10 leading-relaxed">
+                        <h2 class="text-2xl text-[#2F327D] mb-4">A <span class="text-[#00CBB8]">user interface
+                            </span> designed for the classroom</h2>
+                        <div class="flex mt-6 items-center">
+                            <div class="p-5 shadow-[0_10px_60px_0px_rgba(38,45,118,0.2)] rounded-full">
+                                <img class="w-7" src="./images/home/Group 72.png" alt="">
+                            </div>
+                            <p class="text-[#696984] ml-6">Teachers don't get lost in the grid view and have a dedicated
+                                Podium space.</p>
+                        </div>
+                        <div class="flex mt-6 items-center">
+                            <div class="p-5 shadow-[0_10px_60px_0px_rgba(38,45,118,0.2)] rounded-full">
+                                <img class="w-7" src="./images/home/Group 73.png" alt="">
+                            </div>
+                            <p class="text-[#696984] ml-6">TA's and presenters can be moved to the front of the class.
+                            </p>
+                        </div>
+                        <div class="flex mt-6 items-center">
+                            <div class="p-5 shadow-[0_10px_60px_0px_rgba(38,45,118,0.2)] rounded-full">
+                                <img class="w-7" src="./images/home/users 2.png" alt="">
+                            </div>
+                            <p class="text-[#696984] ml-6">Teachers can easily see all students and class data at one
+                                time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="flex flex-col md:flex-row gap-14 items-center mt-14">
+                <div class="md:w-1/2 md:pr-12">
+                    <div class="relative z-10 leading-relaxed">
+                        <h2 class="text-2xl text-[#2F327D] mb-4"><span class="text-[#00CBB8]">Tools
+                            </span> For Teachers And Learners</h2>
+                        <p class="text-[#696984] leading-relaxed text-justify">
+                            Class has a dynamic set of teaching tools built to be deployed and used during class.
+                            Teachers can handout assignments in real-time for students to complete and submit.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <img src="./images/home/Group 122.png" alt="">
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="flex flex-col-reverse md:flex-row gap-14 items-center mt-14">
+                <div class="md:w-1/2 md:pr-10">
+                    <img src="./images/home/Group 92.png" alt="">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <div class="relative z-10 leading-relaxed">
+                        <h2 class="text-2xl text-[#2F327D] mb-4">Assessments, <span class="text-[#00CBB8]">Quizzes
+                            </span>, Tests</h2>
+                        <p class="text-[#696984] leading-relaxed text-justify">
+                            Easily launch live assignments, quizzes, and tests.
+                            Student results are automatically entered in the online gradebook.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="flex flex-col md:flex-row gap-14 items-center mt-14">
+                <div class="md:w-2/5 md:pr-5">
+                    <div class="relative z-10 leading-relaxed">
+                        <h2 class="text-2xl text-[#2F327D] mb-4"><span class="text-[#00CBB8]">Class Management
+                            </span> Tools for Educators</h2>
+                        <p class="text-[#696984] leading-relaxed text-justify">
+                            Class provides tools to help run and manage the class such as Class Roster, Attendance, and
+                            more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-3/5">
+                    <img src="./images/home/Group 124.png" alt="">
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="flex flex-col-reverse md:flex-row gap-14 items-center mt-14">
+                <div class="md:w-3/5">
+                    <img src="./images/home/Group 106.png" alt="">
+                </div>
+                <div class="md:w-2/5 md:pl-5">
+                    <div class="relative z-10 leading-relaxed">
+                        <h2 class="text-2xl text-[#2F327D] mb-4"><span class="text-[#00CBB8]">One-on-One
+                            </span> Discussions</h2>
+                        <p class="text-[#696984] leading-relaxed text-justify">
+                            Teachers and teacher assistants can talk with students privately without leaving the Zoom
+                            environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="text-center mt-14">
+                <button class="text-[#49BBBD] border-[#49BBBD] text-xl px-8 py-4 rounded-full"
+                    style="border: 1px solid;">See more features</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Course -->
+    <div class="pt-48 pb-24 relative">
+        <div class="container mx-auto text-black/80 relative z-10">
+            <div>
+                <h3 class="text-3xl font-bold mb-4">Explore Course</h3>
+                <p class="text-black/50">Ut sed eros finibus, placerat orci id, dapibus.</p>
+            </div>
+
+            <!--  -->
+            <div class="mt-20">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-palette"></i>
+                        <span class="font-bold">Lorem Ipsum</span>
+                    </div>
+                    <p class="text-xl text-[#00BCD4]">SEE ALL <i class="fa-solid fa-arrow-right ml-8"></i></p>
+                </div>
+                <div class="mt-8 relative">
+                    <div class="flex flex-wrap space-y-4 items-center justify-between relative z-10">
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#FF6F00] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Ut Sed Eros
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#FF8374] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Curabitur Egestas
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#B45A1B] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Quisque Conseq…
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#FFB300] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Cras Convallis
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#C583FF] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Vestibulum fauci…
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#00A8FF] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Ut Sed Eros
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#6DB4A7] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Vestibulum faucibu
+                                </div>
+                            </div>
+                        </div>
+                        <img class="sm:h-72 h-auto pl-7" src="./images/home/Detail.png" alt="">
+                    </div>
+                    <div class="bg-black/5 h-16 w-full rounded-2xl absolute left-0 bottom-0 translate-y-1/2"></div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="mt-20">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-earth-asia"></i>
+                        <span class="font-bold">Quisque a Consequat</span>
+                    </div>
+                    <p class="text-xl text-[#00BCD4]">SEE ALL <i class="fa-solid fa-arrow-right ml-8"></i></p>
+                </div>
+                <div class="mt-8 relative">
+                    <div class="flex flex-wrap space-y-4 items-center justify-between relative z-10">
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#FF6F00] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Ut Sed Eros
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#FF8374] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Curabitur Egestas
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#B45A1B] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Quisque Conseq…
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#FFB300] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Cras Convallis
+                                </div>
+                            </div>
+                        </div>
+
+                        <img class="sm:h-72 h-auto px-7" src="./images/home/Detail1.png" alt="">
+
+
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#C583FF] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Vestibulum fauci…
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#00A8FF] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Ut Sed Eros
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#6DB4A7] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Vestibulum faucibu
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-black/5 h-16 w-full rounded-2xl absolute left-0 bottom-0 translate-y-1/2"></div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="mt-20">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-award"></i>
+                        <span class="font-bold">Aenean Facilisis</span>
+                    </div>
+                    <p class="text-xl text-[#00BCD4]">SEE ALL <i class="fa-solid fa-arrow-right ml-8"></i></p>
+                </div>
+                <div class="mt-8 relative">
+                    <div class="flex flex-wrap space-y-4 items-center justify-between relative z-10">
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#FF6F00] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Ut Sed Eros
+                                </div>
+                            </div>
+                        </div>
+
+                        <img class="sm:h-72 h-auto px-7" src="./images/home/Detail2.png" alt="">
+
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#FF8374] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Curabitur Egestas
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#B45A1B] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Quisque Conseq…
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#FFB300] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Cras Convallis
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#C583FF] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Vestibulum fauci…
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#00A8FF] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Ut Sed Eros
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-20 h-72 p-2.5 bg-white rounded-2xl shadow-[0px_3px_49px_9px_rgba(0,0,0,0.06);] rotate-[-10deg]">
+                            <div class="relative bg-[#CCFABC] h-full rounded-2xl overflow-hidden">
+                                <p class="absolute w-20 bottom-1/2 translate-x-[-4px] translate-y-1/2">280 x 102</p>
+                                <div
+                                    class="bg-[#6DB4A7] text-white w-[216px] h-[46px] absolute top-[108px] left-[-77px] rotate-90 rounded-2xl text-center leading-[46px] ">
+                                    Vestibulum faucibu
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-black/5 h-16 w-full rounded-2xl absolute left-0 bottom-0 translate-y-1/2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="w-4/5 h-full bg-[#9dccff] absolute top-0 left-0 rounded-br-[80px]"></div>
+    </div>
+
+    <!-- TESTIMONIAL -->
+    <div class="py-20">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap">
+                <div class="lg:w-2/5">
+                    <div class="flex items-center mb-6 font-light tracking-widest">
+                        <div class="w-16 bg-[#525596] mr-7" style="height: 1px;"></div>
+                        <p>TESTIMONIAL</p>
+                    </div>
+                    <div class="space-y-5 text-[#696984] leading-relaxed">
+                        <h2 class="text-[#2F327D] text-3xl">What They Say?</h2>
+                        <p>TOTC has got more than 100k positive ratings from our users around the world.</p>
+                        <p>Some of the students and teachers were greatly helped by the Skilline.</p>
+                        <p>Are you too? Please give your assessment</p>
+                        <div class="font-light">
+                            <div class="relative text-[#49BBBD] border-[#49BBBD] sm:text-xl pl-8 pr-20 sm:py-4 py-2 rounded-full inline-block overflow-hidden"
+                                style="border: 1px solid;">
+                                Write your assessment
+                                <button
+                                    class="text-[#49BBBD] border-[#49BBBD] absolute top-0 right-0 px-5 rounded-full h-full "
+                                    style="border: 1px solid;"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/5 relative">
+                    <img class="w-4/5 sm:w-[55%] mx-auto" src="./images/home/Mask Group.png" alt="">
+                    <div
+                        class="flex rounded-2xl bg-white overflow-hidden shadow-[2px_4px_60px_0px_rgba(41,44,124,0.10)] sm:absolute sm:bottom-0 sm:left-1/3 sm:translate-y-1/3 mt-5 sm:mt-0">
+                        <div class="w-8 bg-[#F67766]"></div>
+                        <div class="p-8 leading-relaxed">
+                            <p class="text-[#5F5F7E] text-lg pl-7 border-l border-[#BDBDD1]">
+                                "Thank you so much for your help. It's exactly what I've been looking for. You won't
+                                regret it. It really saves me time and effort. TOTC is exactly what our business has
+                                been lacking."
+                            </p>
+                            <div class="flex items-center justify-between mt-6">
+                                <p class="text-xl">Gloria Rose</p>
+                                <div class="text-right">
+                                    <div class="text-[#FBA333]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="text-[#80819A]">12 reviews at Yelp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lastest News and Resources -->
+    <div class="py-20">
+        <div class="container mx-auto">
+            <div class=" text-center">
+                <h3 class="text-3xl text-[#2F327D]">Lastest News and Resources</h3>
+                <p class="text-[#696984] text-xl">See the developments that have occurred to TOTC in the world</p>
+            </div>
+            <div class="flex gap-12 lg:flex-row flex-col leading-relaxed mt-8">
+                <div class="lg:w-1/2 space-y-4">
+                    <img src="./images/home/Group 40.png" alt="">
+                    <span class="inline-block text-sm py-1 px-4 rounded-full bg-[#49BBBD] text-white">NEWS</span>
+                    <h3 class="text-[#252641] text-xl font-medium">Class adds $30 million to its balance sheet for a
+                        Zoom-friendly edtech solution</h3>
+                    <p class="text-[#696984]">Class, launched less than a year ago by Blackboard co-founder Michael
+                        Chasen, integrates exclusively...</p>
+                    <a class="inline-block mt-7 text-[#696984] underline" href="#">Read more</a>
+                </div>
+                <div class="lg:w-1/2 space-y-10">
+                    <div class="flex items-center">
+                        <div class="relative">
+                            <img src="./images/home/Rectangle 33.png" alt="">
+                            <span
+                                class="inline-block text-sm py-1 px-4 rounded-full bg-[#49BBBD] text-white absolute right-3 bottom-3">PRESS
+                                RELEASE</span>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-[#252641] text-lg font-medium">Class Technologies Inc. Closes $30 Million
+                                Series A Financing to Meet High Demand</h3>
+                            <p class="text-[#696984] text-sm mt-3">Class Technologies Inc., the company that created
+                                Class,...</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="relative">
+                            <img src="./images/home/Rectangle 34.png" alt="">
+                            <span
+                                class="inline-block text-sm py-1 px-4 rounded-full bg-[#49BBBD] text-white absolute right-3 bottom-3">NEWS</span>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-[#252641] text-lg font-medium">Zoom's earliest investors are betting
+                                millions on a better Zoom for schools</h3>
+                            <p class="text-[#696984] text-sm mt-3">Zoom was never created to be a consumer product.
+                                Nonetheless, the...</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="relative">
+                            <img src="./images/home/Rectangle 37.png" alt="">
+                            <span
+                                class="inline-block text-sm py-1 px-4 rounded-full bg-[#49BBBD] text-white absolute right-3 bottom-3">NEWS</span>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-[#252641] text-lg font-medium">Former Blackboard CEO Raises $16M to Bring
+                                LMS Features to Zoom Classrooms</h3>
+                            <p class="text-[#696984] text-sm mt-3">This year, investors have reaped big financial
+                                returns from betting on Zoom...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-[#252641] pt-16 pb-8 text-[#626381] px-5">
+        <div class="flex flex-col items-center">
+            <div class="flex items-center">
+                <img class="w-24" src="./images/home/logo.png" alt="">
+                <p class="pl-6 ml-6 border-l border-[#626381] text-white">Virtual Class for Zoom</p>
+            </div>
+            <p class="mt-20 mb-4">Subscribe to get our Newsletter</p>
+            <div class="flex gap-4 flex-wrap items-center">
+                <input type="text"
+                    class="text-base text-white bg-transparent border-[#626381] py-2 px-5 rounded-full outline-none min-w-[240px]"
+                    style="border-width: 1px;" placeholder="Your email">
+                <button
+                    class="text-base text-white bg-[#49BBBD] border-[#626381] py-2 px-5 rounded-full">Subscribe</button>
+            </div>
+            <p class="mt-14 mb-4">Careers | Privacy Policy | Terms & Conditions</p>
+            <p>© 2021 Class Technologies Inc. </p>
+        </div>
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+    <!-- waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- countup js -->
+    <script src="./JavaScript/jquery.countup.js"></script>
+    
+    <script>
+        $('.counter').countUp();
+    </script>
+
+    <!-- my js -->
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="font-['Poppins']">
+    <!-- header -->
+    <header class="py-7">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-center justify-between">
+                <img class="w-28" src="./images/home/logo2.png" alt="">
+                <button class="btn-show-menu hidden text-xl w-12 h-12 bg-white text-[#5b5b5b] rounded">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <nav class="flex items-center">
+                    <ul class="flex items-center">
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-16">
+                            <img src="./images/home/image-user.png" alt="">
+                        </div>
+                        <p>Lina</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="py-16 bg-[#9DCCFF33]">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap md:flex-nowrap gap-16 items-center">
+                <div class="md:w-1/2 space-y-4 leading-relaxed">
+                    <p class="text-lg">By Themadbrains in <span class="text-[#49BBBD]">inspiration</span></p>
+                    <h3 class="text-[#2F327D] text-3xl font-medium">Why Swift UI Should Be on the Radar of Every Mobile Developer</h3>
+                    <p class="text-[#696984]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
+                    <button class="text-white bg-[#49BBBD] px-8 py-3 rounded-xl text-base">Start learning now</button>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="./images/blog/Rectangle 32.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-16">
+        <div class="container mx-auto">
+            <div class="mb-5 flex items-center justify-between">
+                <h4 class="text-2xl">Reading blog list</h4>
+                <a href="#" class="font-semibold text-[#49BBBD]">See all</a>
+            </div>
+            <div class="grid md:gap-12 gap-10 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+                <div class="relative">
+                    <img src="./images/blog/Rectangle 34.png" alt="">
+                    <span class="bg-white/70 text-black/80 text-xl text-center py-3 w-[200px] rounded-xl absolute bottom-5 right-1/2 translate-x-1/2">UX/UI</span>
+                </div>
+                <div class="relative">
+                    <img src="./images/blog/Rectangle 34.1.png" alt="">
+                    <span class="bg-white/70 text-black/80 text-xl text-center py-3 w-[200px] rounded-xl absolute bottom-5 right-1/2 translate-x-1/2">React</span>
+                </div>
+                <div class="relative">
+                    <img src="./images/blog/Rectangle 34.2.png" alt="">
+                    <span class="bg-white/70 text-black/80 text-xl text-center py-3 w-[200px] rounded-xl absolute bottom-5 right-1/2 translate-x-1/2">PHP</span>
+                </div>
+                <div class="relative">
+                    <img src="./images/blog/Rectangle 34.3.png" alt="">
+                    <span class="bg-white/70 text-black/80 text-xl text-center py-3 w-[200px] rounded-xl absolute bottom-5 right-1/2 translate-x-1/2">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-16 bg-[#9DCCFF33] leading-relaxed">
+        <div class="container mx-auto">
+            <div class="mb-5 flex items-center justify-between">
+                <h4 class="text-2xl">Related Blog</h4>
+                <a href="#" class="font-semibold text-[#49BBBD]">See all</a>
+            </div>
+            <div class="grid gap-16 md:grid-cols-2 grid-cols-1">
+                <div class="px-7 py-10 rounded-2xl bg-white">
+                    <div>
+                        <img src="./images//blog/Rectangle 23.png" alt="">
+                    </div>
+                    <div class="mt-4 space-y-4">
+                        <h3 class="sm:text-2xl text-lg text-[#252641]">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h3>
+                        <div class="flex items-center">
+                            <img class="rounded-full w-16 mr-4" src="./images/home/image-user.png" alt="">
+                            <p>Lina</p>
+                        </div>
+                        <p class="text-[#696984]">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+                        <div class="flex items-center justify-between text-[#696984] pt-4">
+                            <a class="text-base underline" href="#">Learn more</a>
+                            <div>
+                                <i class="fa-solid fa-eye text-[#49BBBD]"></i>
+                                <span class="pl-4">251,232</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-7 py-10 rounded-2xl bg-white">
+                    <div>
+                        <img src="./images/blog/Rectangle 32.1.png" alt="">
+                    </div>
+                    <div class="mt-4 space-y-4">
+                        <h3 class="sm:text-2xl text-lg text-[#252641]">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h3>
+                        <div class="flex items-center">
+                            <img class="rounded-full w-16 mr-4" src="./images/home/image-user.png" alt="">
+                            <p>Lina</p>
+                        </div>
+                        <p class="text-[#696984]">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+                        <div class="flex items-center justify-between text-[#696984] pt-4">
+                            <a class="text-base underline" href="#">Learn more</a>
+                            <div>
+                                <i class="fa-solid fa-eye text-[#49BBBD]"></i>
+                                <span class="pl-4">251,232</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right space-x-2 mt-5">
+                <button class="h-10 w-10 text-xl text-white rounded-md bg-[#49BBBD80]"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="h-10 w-10 text-xl text-white rounded-md bg-[#49BBBD]"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-16 leading-relaxed">
+        <div class="container mx-auto">
+            <h4 class="text-2xl mb-5">Marketing Articles</h4>
+            <div class="grid gap-8 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+                <div class="p-4 rounded-2xl bg-white shadow-[0px_18px_47px_0px_rgba(47,50,125,0.10)]">
+                    <div>
+                        <img src="./images/blog/Rectangle 3.1.png" alt="">
+                    </div>
+                    <div class="mt-3 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 21" fill="none">
+                                    <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="0.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    </svg>
+                                <span class="text-[#696984] text-sm ml-1">Design</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#D9D9D9] text-xl"></i>
+                                <span class="text-[#696984] text-sm ml-1">3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="sm:text-xl text-base text-[#252641]">AWS Certified solutions Architect</h3>
+                        <p class="text-[#696984]">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <div class="flex items-end justify-between">
+                            <div class="flex items-center">
+                                <img class="rounded-full w-10 mr-4" src="./images/home/image-user.png" alt="">
+                                <p>Lina</p>
+                            </div>
+                            <div>
+                                <span class="text-sm text-black/50 line-through italic font-light">$100</span>
+                                <span class="text-[#49BBBD] text-xl font-bold ml-2">$80</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white shadow-[0px_18px_47px_0px_rgba(47,50,125,0.10)]">
+                    <div>
+                        <img src="./images/blog/Rectangle 3.2.png" alt="">
+                    </div>
+                    <div class="mt-3 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 21" fill="none">
+                                    <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="0.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    </svg>
+                                <span class="text-[#696984] text-sm ml-1">Design</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#D9D9D9] text-xl"></i>
+                                <span class="text-[#696984] text-sm ml-1">3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="sm:text-xl text-base text-[#252641]">AWS Certified solutions Architect</h3>
+                        <p class="text-[#696984]">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <div class="flex items-end justify-between">
+                            <div class="flex items-center">
+                                <img class="rounded-full w-10 mr-4" src="./images/home/image-user.png" alt="">
+                                <p>Lina</p>
+                            </div>
+                            <div>
+                                <span class="text-sm text-black/50 line-through italic font-light">$100</span>
+                                <span class="text-[#49BBBD] text-xl font-bold ml-2">$80</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white shadow-[0px_18px_47px_0px_rgba(47,50,125,0.10)]">
+                    <div>
+                        <img src="./images/blog/Rectangle 3.3.png" alt="">
+                    </div>
+                    <div class="mt-3 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 21" fill="none">
+                                    <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="0.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    </svg>
+                                <span class="text-[#696984] text-sm ml-1">Design</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#D9D9D9] text-xl"></i>
+                                <span class="text-[#696984] text-sm ml-1">3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="sm:text-xl text-base text-[#252641]">AWS Certified solutions Architect</h3>
+                        <p class="text-[#696984]">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <div class="flex items-end justify-between">
+                            <div class="flex items-center">
+                                <img class="rounded-full w-10 mr-4" src="./images/home/image-user.png" alt="">
+                                <p>Lina</p>
+                            </div>
+                            <div>
+                                <span class="text-sm text-black/50 line-through italic font-light">$100</span>
+                                <span class="text-[#49BBBD] text-xl font-bold ml-2">$80</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white shadow-[0px_18px_47px_0px_rgba(47,50,125,0.10)]">
+                    <div>
+                        <img src="./images/blog/Rectangle 3.4.png" alt="">
+                    </div>
+                    <div class="mt-3 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 21" fill="none">
+                                    <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="0.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    </svg>
+                                <span class="text-[#696984] text-sm ml-1">Design</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#D9D9D9] text-xl"></i>
+                                <span class="text-[#696984] text-sm ml-1">3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="sm:text-xl text-base text-[#252641]">AWS Certified solutions Architect</h3>
+                        <p class="text-[#696984]">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <div class="flex items-end justify-between">
+                            <div class="flex items-center">
+                                <img class="rounded-full w-10 mr-4" src="./images/home/image-user.png" alt="">
+                                <p>Lina</p>
+                            </div>
+                            <div>
+                                <span class="text-sm text-black/50 line-through italic font-light">$100</span>
+                                <span class="text-[#49BBBD] text-xl font-bold ml-2">$80</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#252641] pt-16 pb-8 text-[#626381] px-5">
+        <div class="flex flex-col items-center">
+            <div class="flex items-center">
+                <img class="w-24" src="./images/home/logo.png" alt="">
+                <p class="pl-6 ml-6 border-l border-[#626381] text-white">Virtual Class for Zoom</p>
+            </div>
+            <p class="mt-20 mb-4">Subscribe to get our Newsletter</p>
+            <div class="flex gap-4 flex-wrap items-center">
+                <input type="text"
+                    class="text-base text-white bg-transparent border-[#626381] py-2 px-5 rounded-full outline-none min-w-[240px]"
+                    style="border-width: 1px;" placeholder="Your email">
+                <button
+                    class="text-base text-white bg-[#49BBBD] border-[#626381] py-2 px-5 rounded-full">Subscribe</button>
+            </div>
+            <p class="mt-14 mb-4">Careers | Privacy Policy | Terms & Conditions</p>
+            <p>© 2021 Class Technologies Inc. </p>
+        </div>
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+    <!-- waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- countup js -->
+    <script src="./JavaScript/jquery.countup.js"></script>
+    
+    <script>
+        $('.counter').countUp();
+    </script>
+
+    <!-- my js -->
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>
