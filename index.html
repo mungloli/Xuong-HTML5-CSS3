@@ -20,99 +20,97 @@
 </head>
 
 <body class="font-['Poppins']">
-    <div class="bg-[url('./images/home/header-bg.png')] bg-cover bg-no-repeat bg-bottom pb-4 min-h-screen">
-        <header class="py-7">
-            <div class="container mx-auto">
-                <div class="flex flex-wrap items-center justify-between">
-                    <img class="w-28" src="./images/home/logo.png" alt="">
-                    <button class="btn-show-menu hidden text-xl w-12 h-12 bg-white text-[#5b5b5b] rounded">
-                        <i class="fa-solid fa-bars"></i>
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
+    <header class="py-7 fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-center justify-between">
+                <img class="w-28" src="./images/home/logo.png" alt="">
+                <button class="btn-show-menu hidden text-xl w-12 h-12 bg-white text-[#5b5b5b] rounded">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
 
-                    <nav class="flex items-center">
-                        <ul class="flex items-center">
-                            <li>
-                                <a href="#" class="text-xl text-white mr-12">Home</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-xl text-white mr-12">Courses</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-xl text-white mr-12">Careers</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-xl text-white mr-12">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-xl text-white mr-12">About Us</a>
-                            </li>
-                        </ul>
-                        <div>
-                            <a href="./login.html" class="inline-block text-center leading-[48px] text-xl w-32 h-12 bg-white text-[#5b5b5b] rounded-full mr-6">Login</a>
-                            <a href="./login.html" class="inline-block text-center leading-[48px] text-xl w-32 h-12 bg-white/30 text-white rounded-full">Sign Up</a>
-                        </div>
-                    </nav>
-                </div>
+                <nav class="flex items-center">
+                    <ul class="flex items-center">
+                        <li>
+                            <a href="#" class="text-xl text-white mr-12">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-white mr-12">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-white mr-12">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-white mr-12">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-white mr-12">About Us</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="./login.html" class="inline-block text-center leading-[48px] text-xl w-32 h-12 bg-white text-[#5b5b5b] rounded-full mr-6">Login</a>
+                        <a href="./login.html" class="inline-block text-center leading-[48px] text-xl w-32 h-12 bg-white/30 text-white rounded-full">Sign Up</a>
+                    </div>
+                </nav>
             </div>
-        </header>
+        </div>
+    </header>
+    <div class="bg-[url('./images/home/banner.png')] bg-cover bg-no-repeat md:bg-bottom bg-left min-h-screen">
 
         <!-- banner -->
-        <div>
-            <div class="container mx-auto">
-                <div class="flex flex-wrap items-center">
-                    <div class="lg:w-1/2 lg:pr-16">
-                        <h1 class="text-5xl text-white font-semibold leading-snug">
-                            <span class="text-[#F48C06]">Studying</span>
-                            Online is now much easier
-                        </h1>
-                        <p class="text-lg text-white my-8 font-light">
-                            TOTC is an interesting platform that will teach you in more an interactive way
-                        </p>
-                        <div class="flex md:items-center flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
-                            <button class="text-xl w-40 h-14 bg-white/30 text-white rounded-full">Join for free</button>
-                            <button class="text-xl w-12 h-12 bg-white text-[#23bdee] rounded-full"><i
-                                    class="fa-solid fa-play"></i></button>
-                            <p class="text-[#252641] text-lg">Watch how it works</p>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/2 relative">
-                        <img class="object-cover w-[80%] mx-auto"
-                            src="./images/home/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min.png" alt="">
-                        <div class="absolute left-0 top-40 hidden sm:block">
-                            <div class="flex items-center p-4 bg-white/80 rounded-2xl backdrop-blur">
-                                <img class="w-10 h-10" src="./images/home/Group 6.png" alt="">
-                                <div class="ml-5">
-                                    <p class="text-lg">250k</p>
-                                    <p class="text-sm">Assisted Student</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute left-0 top-96 hidden sm:block">
-                            <div class="flex p-4 bg-white/80 rounded-2xl backdrop-blur">
-                                <img class="w-10 h-10" src="./images/home/Frame 56.png" alt="">
-                                <div class="ml-5">
-                                    <p class="text-lg">User Experience Class</p>
-                                    <p class="text-sm">Today at 12.00 PM</p>
-                                    <button class="text-base px-8 py-2 bg-[#d8567e] text-white rounded-full mt-4">Join
-                                        Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute right-5 top-28 hidden sm:block">
-                            <img class="w-24 h-24" src="./images/home/Group 9.png" alt="">
-                        </div>
-                        <div class="absolute right-0 top-80 hidden sm:block">
-                            <div class="flex items-center p-4 bg-white/80 rounded-2xl backdrop-blur">
-                                <img class="w-10 h-10" src="./images/home/Frame 57.png" alt="">
-                                <div class="ml-5">
-                                    <p class="text-lg">Congratulations</p>
-                                    <p class="text-sm">Your admission completed</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container mx-auto flex items-center min-h-screen">
+            <div class="md:w-1/2 md:pr-20">
+                <h1 class="lg:text-5xl text-4xl text-white font-semibold leading-snug">
+                    <span class="text-[#F48C06]">Studying</span>
+                    Online is now much easier
+                </h1>
+                <p class="lg:text-lg text-base text-white my-8 font-light">
+                    TOTC is an interesting platform that will teach you in more an interactive way
+                </p>
+                <div class="flex lg:items-center flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0">
+                    <button class="text-xl w-40 h-14 bg-white/30 text-white rounded-full">Join for free</button>
+                    <button class="text-xl w-12 h-12 bg-white text-[#23bdee] rounded-full"><i
+                            class="fa-solid fa-play"></i></button>
+                    <p class="text-[#252641] text-lg">Watch how it works</p>
                 </div>
+            </div>
+            <!-- <div class="lg:w-1/2 relative">
+            <div>
+                    <img class="object-cover w-[80%] mx-auto"
+                        src="./images/home/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min.png" alt="">
+                    <div class="absolute left-0 top-40 hidden sm:block">
+                        <div class="flex items-center p-4 bg-white/80 rounded-2xl backdrop-blur">
+                            <img class="w-10 h-10" src="./images/home/Group 6.png" alt="">
+                            <div class="ml-5">
+                                <p class="text-lg">250k</p>
+                                <p class="text-sm">Assisted Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-0 top-96 hidden sm:block">
+                        <div class="flex p-4 bg-white/80 rounded-2xl backdrop-blur">
+                            <img class="w-10 h-10" src="./images/home/Frame 56.png" alt="">
+                            <div class="ml-5">
+                                <p class="text-lg">User Experience Class</p>
+                                <p class="text-sm">Today at 12.00 PM</p>
+                                <button class="text-base px-8 py-2 bg-[#d8567e] text-white rounded-full mt-4">Join
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute right-5 top-28 hidden sm:block">
+                        <img class="w-24 h-24" src="./images/home/Group 9.png" alt="">
+                    </div>
+                    <div class="absolute right-0 top-80 hidden sm:block">
+                        <div class="flex items-center p-4 bg-white/80 rounded-2xl backdrop-blur">
+                            <img class="w-10 h-10" src="./images/home/Frame 57.png" alt="">
+                            <div class="ml-5">
+                                <p class="text-lg">Congratulations</p>
+                                <p class="text-sm">Your admission completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -467,7 +465,7 @@
     </div>
 
     <!-- Explore Course -->
-    <div class="pt-48 pb-24 relative">
+    <div class="py-20 relative">
         <div class="container mx-auto text-black/80 relative z-10">
             <div>
                 <h3 class="text-3xl font-bold mb-4">Explore Course</h3>
@@ -475,7 +473,7 @@
             </div>
 
             <!--  -->
-            <div class="mt-20">
+            <div class="mt-12">
                 <div class="flex items-center justify-between">
                     <div class="text-2xl">
                         <i class="fa-solid fa-palette"></i>
