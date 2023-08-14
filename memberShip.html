@@ -16,7 +16,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- OwlCarousel cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/memberShip.css">
 </head>
 
 <body class="font-['Poppins']">
@@ -30,7 +36,7 @@
                     <i class="fa-solid fa-xmark"></i>
                 </button>
 
-                <nav class="flex items-center">
+                <nav class="items-center hidden lg:flex">
                     <ul class="flex items-center">
                         <li>
                             <a href="#" class="text-xl text-[#5B5B5B] mr-12">Home</a>
@@ -60,14 +66,15 @@
         </div>
     </header>
 
-    <div class="py-14">
+    <div class="md:pt-14 pt-8">
         <div class="container mx-auto">
-            <h1 class="text-center text-6xl text-[#49BBBD] font-bold pb-14">Affordable pricing</h1>
-            <div class="grid grid-cols-3 gap-8">
+            <h1 class="text-center md:text-6xl text-3xl text-[#49BBBD] font-bold md:pb-14 pb-6">Affordable pricing</h1>
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
                 <div class="flex flex-col justify-between p-7 rounded-2xl">
                     <div class="space-y-5">
                         <p class="text-[#49BBBD] font-bold">Like a pussy</p>
-                        <h3 class="text-3xl font-bold uppercase">Free <span class="text-base font-medium">/ forever</span></h3>
+                        <h3 class="text-3xl font-bold uppercase">Free <span class="text-base font-medium">/
+                                forever</span></h3>
                         <div class="flex items-center">
                             <div class="flex p-2 bg-[#C2C2C2] rounded-full">
                                 <i class="fa-solid fa-check"></i>
@@ -88,19 +95,23 @@
                         </div>
                     </div>
                     <div>
-                        <button class="w-full h-16 border-[#adadad] text-[#49BBBD] text-lg rounded-2xl font-bold" style="border-width: 1px;">Try for free</button>
+                        <button class="w-full h-16 mt-5 border-[#adadad] text-[#49BBBD] text-lg rounded-2xl font-bold"
+                            style="border-width: 1px;">Try for free</button>
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-between p-7 rounded-2xl shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]">
+                <div
+                    class="flex flex-col justify-between p-7 rounded-2xl shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]">
                     <div class="space-y-5">
                         <div class="flex items-center justify-between">
                             <div>👤 <span class="text-[#49BBBD] font-bold ">Individual</span></div>
-                            <div class="py-1.5 px-6 border-[#6C5CE7] rounded-full font-semibold text-xs tracking-widest uppercase" style="border-width: 1px;">
+                            <div class="py-1.5 px-6 border-[#6C5CE7] rounded-full font-semibold text-xs tracking-widest uppercase"
+                                style="border-width: 1px;">
                                 best!
                             </div>
                         </div>
-                        <h3 class="text-3xl font-bold uppercase">$24 <span class="text-base font-medium">/ month</span></h3>
+                        <h3 class="text-3xl font-bold uppercase">$24 <span class="text-base font-medium">/ month</span>
+                        </h3>
                         <div class="flex items-center">
                             <div class="flex p-2 bg-[#FDCB6E] rounded-full">
                                 <i class="fa-solid fa-check"></i>
@@ -133,14 +144,17 @@
                         </div>
                     </div>
                     <div>
-                        <button class="w-full h-16 mt-5 border-[#49BBBD] text-white bg-[#49BBBD] text-lg rounded-2xl font-bold" style="border-width: 1px;">Regular license</button>
+                        <button
+                            class="w-full h-16 mt-5 border-[#49BBBD] text-white bg-[#49BBBD] text-lg rounded-2xl font-bold"
+                            style="border-width: 1px;">Regular license</button>
                     </div>
                 </div>
 
                 <div class="flex flex-col justify-between p-7 rounded-2xl">
                     <div class="space-y-5">
                         <div class="text-[#49BBBD] font-bold">👥 <span>Corporate</span></div>
-                        <h3 class="text-3xl font-bold uppercase">$12 <span class="text-base font-medium">/ editor</span></h3>
+                        <h3 class="text-3xl font-bold uppercase">$12 <span class="text-base font-medium">/ editor</span>
+                        </h3>
                         <div class="flex items-center">
                             <div class="flex p-2 bg-[#AEF8E3] rounded-full">
                                 <i class="fa-solid fa-check"></i>
@@ -167,7 +181,310 @@
                         </div>
                     </div>
                     <div>
-                        <button class="w-full h-16 border-[#adadad] text-[#49BBBD] text-lg rounded-2xl font-bold" style="border-width: 1px;">Extended license</button>
+                        <button class="w-full h-16 mt-5 border-[#adadad] text-[#49BBBD] text-lg rounded-2xl font-bold"
+                            style="border-width: 1px;">Extended license</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-16">
+        <div class="container mx-auto">
+            <div class="text-white text-center rounded-3xl bg-[#252641] sm:p-16 p-5">
+                <h3 class="md:text-3xl text-xl font-semibold">Online coaching lessons for remote learning.</h3>
+                <p class="md:text-lg text-sm md:mt-7 mt-3 md:mb-12 mb-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor
+                    sitamet, consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+                <button class="py-4 px-8 bg-[#49BBBD] rounded-lg">Start learning now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-16">
+        <h3 class="text-center font-semibold text-[#2D3436] text-3xl mb-12">Online coaching lessons for remote learning</h3>
+        <div id="accordionExample">
+
+            <div class="border-b border-neutral-200 bg-white">
+                <h2 class="mb-0" id="headingOne">
+                    <button
+                        class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">
+                        <div class="flex items-center">
+                            <div class="p-2 rounded-full bg-[#55EFC4] mr-4"></div>
+                            Lorem ipsum dolor sit amet
+                        </div>
+                        <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="!visible hidden" data-te-collapse-item aria-labelledby="headingOne"
+                    data-te-parent="#accordionExample">
+                    <div class="pl-12 pr-5 py-4 text-[#696984] md:text-base text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+            </div>
+            <div class="border-b border-neutral-200 bg-white">
+                <h2 class="mb-0" id="headingTwo">
+                    <button
+                        class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="flex items-center">
+                            <div class="p-2 rounded-full bg-[#55EFC4] mr-4"></div>
+                            Consectetur adipiscing elit, sed do 
+                        </div>
+                        <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo"
+                    data-te-parent="#accordionExample">
+                    <div class="pl-12 pr-5 py-4 text-[#696984] md:text-base text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+            </div>
+            <div class="border-b border-neutral-200 bg-white">
+                <h2 class="mb-0" id="headingThree">
+                    <button
+                        class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <div class="flex items-center">
+                            <div class="p-2 rounded-full bg-[#55EFC4] mr-4"></div>
+                            Eiusmod tempos Lorem ipsum
+                        </div>
+                        <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="!visible hidden" data-te-collapse-item aria-labelledby="headingThree"
+                    data-te-parent="#accordionExample">
+                    <div class="pl-12 pr-5 py-4 text-[#696984] md:text-base text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+            </div>
+            <div class="border-b border-neutral-200 bg-white">
+                <h2 class="mb-0" id="headingFour">
+                    <button
+                        class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        <div class="flex items-center">
+                            <div class="p-2 rounded-full bg-[#55EFC4] mr-4"></div>
+                            Lorem ipsum dolor sit amet
+                        </div>
+                        <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour"
+                    data-te-parent="#accordionExample">
+                    <div class="pl-12 pr-5 py-4 text-[#696984] md:text-base text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+            </div>
+            <div class="border-b border-neutral-200 bg-white">
+                <h2 class="mb-0" id="headingFive">
+                    <button
+                        class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFive">
+                        <div class="flex items-center">
+                            <div class="p-2 rounded-full bg-[#55EFC4] mr-4"></div>
+                            Lorem ipsum dolor sit amet
+                        </div>
+                        <span
+                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </span>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFive"
+                    data-te-parent="#accordionExample">
+                    <div class="pl-12 pr-5 py-4 text-[#696984] md:text-base text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-[#9DCCFF]/20 pt-16 mt-16 mb-20 pb-48 relative">
+        <div class="container mx-auto">
+            <div class="lg:px-0 px-2">
+                <h3 class="font-semibold text-[#2D3436] text-3xl mb-12">What our students have to say</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="bg-white pt-7 pb-12 px-6 text-center rounded-2xl">
+                            <div class="w-28 mx-auto">
+                                <img src="./images/memberShip/image 12.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#2D3436] text-xl my-5">Bulkin Simons</h4>
+                                <p class="text-[#696984]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg-white pt-7 pb-12 px-6 text-center rounded-2xl">
+                            <div class="w-28 mx-auto">
+                                <img src="./images/memberShip/image 12.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#2D3436] text-xl my-5">Bulkin Simons</h4>
+                                <p class="text-[#696984]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg-white pt-7 pb-12 px-6 text-center rounded-2xl">
+                            <div class="w-28 mx-auto">
+                                <img src="./images/memberShip/image 12.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#2D3436] text-xl my-5">Bulkin Simons</h4>
+                                <p class="text-[#696984]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg-white pt-7 pb-12 px-6 text-center rounded-2xl">
+                            <div class="w-28 mx-auto">
+                                <img src="./images/memberShip/image 12.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#2D3436] text-xl my-5">Bulkin Simons</h4>
+                                <p class="text-[#696984]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg-white pt-7 pb-12 px-6 text-center rounded-2xl">
+                            <div class="w-28 mx-auto">
+                                <img src="./images/memberShip/image 12.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#2D3436] text-xl my-5">Bulkin Simons</h4>
+                                <p class="text-[#696984]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg-white pt-7 pb-12 px-6 text-center rounded-2xl">
+                            <div class="w-28 mx-auto">
+                                <img src="./images/memberShip/image 12.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#2D3436] text-xl my-5">Bulkin Simons</h4>
+                                <p class="text-[#696984]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg-white pt-7 pb-12 px-6 text-center rounded-2xl">
+                            <div class="w-28 mx-auto">
+                                <img src="./images/memberShip/image 12.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#2D3436] text-xl my-5">Bulkin Simons</h4>
+                                <p class="text-[#696984]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full translate-y-1/2">
+            <div class="container mx-auto">
+                <div class="bg-[#252641] px-20 py-12 rounded-3xl flex items-center justify-between gap-4 lg:flex-row flex-col">
+                    <h3 class="font-semibold text-white text-3xl text-center">APP is available for free</h3>
+                    <div class="flex gap-4 sm:flex-row flex-col">
+                        <button class="py-4 px-8 bg-[#29B9E7] rounded-lg text-white font-bold min-w-[200px]">
+                            Android APP
+                        </button>
+                        <button class="py-4 px-8 bg-[#49BBBD] rounded-lg text-white font-bold min-w-[200px]">
+                            IOS APP
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pb-16 lg:pt-16 sm:pt-24 pt-36">
+        <div class="container mx-auto">
+            <div class="grid gap-16 md:grid-cols-2 grid-cols-1">
+                <div class="px-7 py-10 rounded-2xl bg-white shadow-2xl">
+                    <div>
+                        <img src="./images//blog/Rectangle 32.1.png" alt="">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="sm:text-2xl text-lg text-[#252641]">Become a Teacher</h3>
+                        <p class="text-[#696984] mt-4 mb-10">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+                        <div class="text-right">
+                            <button class="py-4 px-8 bg-[#49BBBD] rounded-lg text-white min-w-[200px]">
+                                Apply a Teacher
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-7 py-10 rounded-2xl bg-white shadow-2xl">
+                    <div>
+                        <img src="./images/blog/Rectangle 32.1.png" alt="">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="sm:text-2xl text-lg text-[#252641]">Become a Coursector</h3>
+                        <p class="text-[#696984] mt-4 mb-10">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+                        <div class="text-right">
+                            <button class="py-4 px-8 bg-[#49BBBD] rounded-lg text-white min-w-[200px]">
+                                Apply a Teacher
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -175,7 +492,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="bg-[#252641] pt-16 pb-8 text-[#626381] px-5">
+    <footer class="bg-[#252641] pt-16 pb-8 text-[#626381] px-5 mt-16">
         <div class="flex flex-col items-center">
             <div class="flex items-center">
                 <img class="w-24" src="./images/home/logo.png" alt="">
@@ -199,17 +516,37 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
         </script>
-    <!-- waypoint -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- countup js -->
-    <script src="./JavaScript/jquery.countup.js"></script>
+    <!-- tailwind El -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
     
-    <script>
-        $('.counter').countUp();
-    </script>
+    <!-- cdn OwlCarouse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- my js -->
     <script src="./JavaScript/script.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:24,
+        nav:true,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            640:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            1024:{
+                items:4
+            }
+        }
+        })
+    </script>
 </body>
 
 </html>

@@ -2,6 +2,12 @@
   padding: 0 24px;
 }
 
+header.header-scroll {
+  background-color: #49BBBD;
+  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 1024px) {
   .container {
     max-width: 100% !important;
@@ -24,6 +30,7 @@
   }
   header.show-menu nav {
     height: auto !important;
+    display: flex;
     flex-direction: column;
     width: 100%;
     transition: all 0.3s ease;

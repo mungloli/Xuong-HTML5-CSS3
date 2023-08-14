@@ -17,10 +17,11 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/header.css"> -->
 </head>
 
 <body class="font-['Poppins']">
-    <header class="py-7 fixed top-0 left-0 w-full z-50">
+    <header class="header-scroll py-7 fixed top-0 left-0 w-full z-50 duration-300">
         <div class="container mx-auto">
             <div class="flex flex-wrap items-center justify-between">
                 <img class="w-28" src="./images/home/logo.png" alt="">
@@ -465,7 +466,7 @@
     </div>
 
     <!-- Explore Course -->
-    <div class="py-20 relative">
+    <div class="py-24 relative">
         <div class="container mx-auto text-black/80 relative z-10">
             <div>
                 <h3 class="text-3xl font-bold mb-4">Explore Course</h3>
@@ -742,9 +743,9 @@
     </div>
 
     <!-- TESTIMONIAL -->
-    <div class="py-20">
+    <div class="py-24">
         <div class="container mx-auto">
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap lg:gap-0 gap-5">
                 <div class="lg:w-2/5">
                     <div class="flex items-center mb-6 font-light tracking-widest">
                         <div class="w-16 bg-[#525596] mr-7" style="height: 1px;"></div>
@@ -892,6 +893,18 @@
     
     <script>
         $('.counter').countUp();
+
+        window.onscroll = function () {
+        myFunction();
+        };
+
+        function myFunction() {
+        if (window.pageYOffset > 50) {
+            header.classList.add("header-scroll");
+        } else {
+            header.classList.remove("header-scroll");
+        }
+        }
     </script>
 
     <!-- my js -->

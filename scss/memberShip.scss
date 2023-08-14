@@ -1,0 +1,25 @@
+
+.owl-carousel {
+    position: relative;
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        font-size: 52px !important;
+        width: 50px;
+        height: 50px;
+        background-color: #49BBBD !important;
+        border-radius: 50%;
+        line-height: 0px !important;
+        color: #fff !important;
+    }
+    .owl-prev {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .owl-next {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
+}
