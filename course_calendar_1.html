@@ -12,12 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        
-
     <link rel="stylesheet" href="./css/course_calendar.css">
 </head>
 
@@ -168,27 +166,79 @@
                     </div>
                 </div>
                 <div class="p-7">
-                    <h2 class="text-xl lg:text-3xl font-bold">Share and Refer</h2>
-                    <div>
-                        <p class="text-xs md:text-sm lg:text-lg mt-5">Lorem ipsum dolor sit amet, 
-                            consectetur adi piscing elit, sed do eiusmodadipiscing elit, 
-                            sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing 
-                            elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum 
-                            dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing 
-                            elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLoremLorem 
-                            ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing 
-                            elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do 
-                            eiusmodeiusmodadipiscing elit, sed do eiusmodLorem eiusmodLorem dolor sit amet, 
-                            consectetur adipiscing</p>
-                    </div>
-                    
+                    <h2 class="text-xl lg:text-3xl font-bold">Create new event</h2>
+                    <p class="text-sm lg:text-lg mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor 
+                        sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, 
+                        sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, 
+                        sed do eiusmodLorem</p>
+                    <form class="bg-white p-5 mt-12 rounded-lg">
+                        <div>
+                            <label class="font-bold sm:text-lg">
+                                Event Name
+                            </label>
+                            <input class="h-10 sm:h-14 pl-5 w-full border rounded-lg mt-3" type="text" name="" id="" placeholder="Adobe XD Auto - Animate : Your Guide to Creating">
+                        </div>
+                        <div class="md:flex mt-5 gap-10">
+                            <div class="w-full md:w-1/2">
+                                <label class="font-bold sm:text-lg" >
+                                    Start Date / Time
+                                </label>
+                                <input class="h-10 sm:h-14 pl-5 w-full block border rounded-lg mt-3" type="text" name="" id="" vlue="September 24, 2017 07:59 am">
+                            </div>
+                            <div class="w-full mt-5 md:mt-0 md:w-1/2">
+                                <label class="font-bold sm:text-lg">
+                                    End Date / Time
+                                </label>
+                                <input class="h-10 sm:h-14 pl-5 w-full block border rounded-lg mt-3" type="text" name="" id="" value="September 24, 2017 07:59 am">
+                            </div>
+                        </div>
+                        <div class="mt-5 block">
+                            <label class="font-bold sm:text-lg ">
+                                Location
+                            </label>
+                            <input class="h-10 sm:h-14 pl-5 w-full border rounded-lg mt-3" type="text" name="" id="" value="2118 Thornridge Cir, Syracuse, Connecticut 35624">
+                        </div>
+                        <div class="md:flex mt-5 gap-10">
+                            <div class="w-full md:w-1/2">
+                                <label class="font-bold sm:text-lg">
+                                    Notification
+                                </label>
+                                <select class="w-full border rounded-lg h-10 sm:h-14 pl-5 mt-3" name="" id="">  
+                                    <option value="">30 mins</option>
+                                </select>
+                            </div>
+                            <div class="w-full mt-5 md:mt-0 md:w-1/2">
+                                <label class="font-bold sm:text-lg">
+                                    Email
+                                </label>
+                                <input class="h-10 sm:h-14 pl-5 w-full border rounded-lg mt-3" type="text" name="" id="" value="jessica.hansome@example.com">
+                            </div>
+                        </div>
+                        <div class="mt-5 block">
+                            <label class="font-bold sm:text-lg ">
+                                Location
+                            </label>
+                            <textarea class="block w-full border p-3" name="" id="" cols="" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur</textarea>
+                        </div>
+                        <div class="mt-12 text-right">
+                            <button class="px-7 py-2 md:w-[337px] md:h-[63px] bg-[#49BBBD] rounded-md text-white">Save Now</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </main>
         <!-- my js -->
+        <script >
+            let btn_list=document.getElementById('btn_list');
+            let list=document.getElementById('list_event');
+            console.log(btn_list);
+            btn_list.addEventListener('click',e=>{
+                list.classList.remove('-left-full')
+                list.classList.add('list_event');
+            })
         </script>
 </body>
 </html>
