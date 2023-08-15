@@ -1,3 +1,18 @@
+const btns = document.querySelectorAll('.btn');
+let activeButton = null;
+
+btns.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (activeButton) {
+      activeButton.style.backgroundColor = ''; // Đặt lại background của nút trước đó
+    }
+    button.style.backgroundColor = "#49BBBD"; // Đặt background cho nút hiện tại
+    activeButton = button; // Lưu trạng thái của nút hiện tại
+  });
+});
+
+
+
 const product =[
     {id:1,image:"./images/literature_course/book1.png",title:"All Benefits of PLUS"},
     {id:2,image:"./images/literature_course/book2.png",title:"All Benefits of PLUS"},
@@ -46,9 +61,9 @@ function renderProduct(){
     const pro=document.querySelector("#product");
     const content=product.map((item,index)=>{
         if(index>=start && index<end){
-        return `  <div class=" w-[90%] mx-auto md-full rounded-[10px]  bg-[white] shadow-2xl shadow-[#b8b8b8] border-[1px] h-auto">
+        return `  <div class=" w-[90%] mx-auto md-full rounded-[10px]  bg-[white] xl:shadow-2xl md:shadow-lg shadow-xl shadow-[#b8b8b8] border-[1px] h-auto">
         <div class="px-7 ">
-           <img class=" rounded-[10px]  mt-[30px] mb-[28.13px] transform hover:scale-105 transition duration-300 ease-in-out w-[95%] mx-auto h-[300px] md:w-full" src="${item.image}" alt="">
+        <div class="overflow-hidden "> <img class=" rounded-[10px]  mt-[30px] mb-[28.13px] transform hover:scale-105 transition duration-300 ease-in-out w-[85%] h-[400px] mx-auto md:h-[300px] md:w-full" src="${item.image}" alt="">  </div>
            <div class=" flex justify-between  md:flex-col-reverse xl:flex-row items-center pb-[31.35px]">
             <p class="text-[#333333] font-normal tracking-[0.5px] xl:text-[19px] md:text-[13px] text-lg md:text-center text-start xl:text-start hover:underline  hover:decoration-solid cursor-pointer">${item.title}</p>
             <p class="text-[#6dc9ca] xl:text-[25px] md:text-sm text-[22px] font-semibold tracking-[0.6px]">$24</p>
