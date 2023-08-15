@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- OwlCarousel cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/memberShip.css">
+
+    <style>
+        @media (min-width: 1024px) and (max-width: 1280px) {
+            .container {
+                max-width: 100% !important;
+                padding: 0 32px;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-['Poppins']">
+    <!-- header -->
+    <header class="py-7">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-center justify-between">
+                <img class="w-28" src="./images/home/logo2.png" alt="">
+                <button class="btn-show-menu hidden text-xl w-12 h-12 bg-white text-[#5b5b5b] rounded">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <nav class="items-center hidden lg:flex">
+                    <ul class="flex items-center">
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-16">
+                            <img src="./images/home/image-user.png" alt="">
+                        </div>
+                        <p>Lina</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner w-full mb-10">
+        <img class="filter brightness-75" src="./images/blog_detail/Rectangle 77.png" alt="">
+    </section>
+
+
+    <section>
+        <div class="container mx-auto">
+            <div class="flex xl:gap-16 gap-6 lg:flex-row flex-col-reverse">
+
+                <div class="lg:w-2/3 lg:max-w-none max-w-2xl mx-auto">
+                    <div class="flex justify-between sm:flex-nowrap flex-wrap">
+                        <button class="h-14 xl:w-44 lg:w-36 w-36 mt-2 bg-black/10 rounded-lg text-black/40 font-semibold">Overview</button>
+                        <button class="h-14 xl:w-44 lg:w-36 w-36 mt-2 bg-black/10 rounded-lg text-black/40 font-semibold">Overview</button>
+                        <button class="h-14 xl:w-44 lg:w-36 w-36 mt-2 bg-black/10 rounded-lg text-black/40 font-semibold">Overview</button>
+                        <button class="h-14 xl:w-44 lg:w-36 w-36 mt-2 bg-[#49BBBD] rounded-lg text-white font-semibold">Overview</button>
+                    </div>
+
+                    <div class="bg-[#9DCCFF4D] md:p-10 p-5 rounded-2xl mt-10">
+                        <div class="flex sm:gap-8 gap-4 items-center sm:flex-row flex-col">
+                            <div class="bg-white py-5 px-10 rounded-xl text-center">
+                                <h3 class="text-black/50 text-2xl font-medium">4 out of 5</h3>
+                                <div class="text-[#FDB022] my-4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-black/50">Top Raiting</p>
+                            </div>
+                            <div class="sm:grow sm:w-auto w-full space-y-3">
+                                <div class="flex sm:gap-8 gap-4 items-center">
+                                    <p class="md:w-1/6 w-1/4">5 Stars</p>
+                                    <div class="md:w-5/6 w-3/4 relative h-2 bg-[#D9D9D9] rounded-sm overflow-hidden">
+                                        <div class="absolute top-0 left-0 h-full w-4/5 bg-[#49BBBD]"></div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-8 gap-4 items-center">
+                                    <p class="md:w-1/6 w-1/4">4 Stars</p>
+                                    <div class="md:w-5/6 w-3/4 relative h-2 bg-[#D9D9D9] rounded-sm overflow-hidden">
+                                        <div class="absolute top-0 left-0 h-full w-4/5 bg-[#49BBBD]"></div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-8 gap-4 items-center">
+                                    <p class="md:w-1/6 w-1/4">3 Stars</p>
+                                    <div class="md:w-5/6 w-3/4 relative h-2 bg-[#D9D9D9] rounded-sm overflow-hidden">
+                                        <div class="absolute top-0 left-0 h-full w-4/5 bg-[#49BBBD]"></div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-8 gap-4 items-center">
+                                    <p class="md:w-1/6 w-1/4">2 Stars</p>
+                                    <div class="md:w-5/6 w-3/4 relative h-2 bg-[#D9D9D9] rounded-sm overflow-hidden">
+                                        <div class="absolute top-0 left-0 h-full w-4/5 bg-[#49BBBD]"></div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-8 gap-4 items-center">
+                                    <p class="md:w-1/6 w-1/4">1 Stars</p>
+                                    <div class="md:w-5/6 w-3/4 relative h-2 bg-[#D9D9D9] rounded-sm overflow-hidden">
+                                        <div class="absolute top-0 left-0 h-full w-4/5 bg-[#49BBBD]"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sm:mt-14 mt-8">
+                            <div>
+                                <div class="flex justify-between sm:items-end sm:flex-row flex-col sm:gap-0 gap-2">
+                                    <div class="flex items-start">
+                                        <img class="rounded-full !w-16 mr-4" src="./images/home/image-user.png" alt="">
+                                        <div>
+                                            <p>Lina</p>
+                                            <div class="text-[#FDB022]">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-[#D9D9D9] flex items-center">
+                                        <i class="fa-regular fa-clock text-xl"></i>
+                                        <span class="text-[#696984] text-sm ml-2">3 Month</span>
+                                    </div>
+                                </div>
+                                <p class="text-[#696984] sm:mt-4 mt-2 sm:text-base text-sm">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+                            </div>
+                            <hr class="border-t-[#696984]/50 my-5">
+                            <div>
+                                <div class="flex justify-between sm:items-end sm:flex-row flex-col sm:gap-0 gap-2">
+                                    <div class="flex items-start">
+                                        <img class="rounded-full !w-16 mr-4" src="./images/home/image-user.png" alt="">
+                                        <div>
+                                            <p>Lina</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-[#D9D9D9] flex items-center">
+                                        <i class="fa-regular fa-clock text-xl"></i>
+                                        <span class="text-[#696984] text-sm ml-2">3 Month</span>
+                                    </div>
+                                </div>
+                                <p class="text-[#696984] sm:mt-4 mt-2 sm:text-base text-sm">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="lg:w-1/3 max-w-2xl mx-auto relative">
+                    <div class="lg:absolute bottom-0 left-0 right-0">
+                        <div class="xl:px-7 px-4 xl:pt-7 pt-4 pb-20 shadow-2xl rounded-2xl bg-white">
+                            <div>
+                                <img src="./images/CourseDetail/Rectangle 1.png" alt="">
+                            </div>
+                            <div class="mt-4 max-w-sm mx-auto">
+                                <div class="flex items-center justify-between">
+                                    <p class="sm:text-3xl text-2xl font-semibold text-black">$49.65</p>
+                                    <p class="line-through sm:text-xl text-base font-semibold text-black/50">$99.99</p>
+                                    <p class="sm:text-xl text-base font-semibold text-black/50">$49.65</p>
+                                </div>
+                                <p class="my-7 sm:text-lg text-base text-[#49BBBD] text-center font-semibold">11 hour left at this price</p>
+                                <button class="h-14 w-full bg-[#49BBBD] rounded-lg text-white font-semibold">Buy Now</button>
+                            </div>
+    
+                            <hr class="border-t-[#696984]/70 my-6">
+    
+                            <div>
+                                <h3 class="sm:text-2xl text-xl text-black font-semibold">This Course included</h3>
+                                <div class="mt-7 space-y-2">
+                                    <div class="flex gap-2 items-center">
+                                        <img class="w-5" src="./images/CourseDetail/icon1.png" alt="">
+                                        <p class="text-black/50 font-medium text-sm">Money Back Guarantee</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <img class="w-5" src="./images/CourseDetail/icon2.png" alt="">
+                                        <p class="text-black/50 font-medium text-sm">Access on all devices</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <img class="w-5" src="./images/CourseDetail/icon3.png" alt="">
+                                        <p class="text-black/50 font-medium text-sm">Certification of completion</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <img class="w-5" src="./images/CourseDetail/icon4.png" alt="">
+                                        <p class="text-black/50 font-medium text-sm">32 Moduls</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <hr class="border-t-[#696984]/70 my-6">
+                            <div>
+                                <h3 class="sm:text-2xl text-xl text-black font-semibold mb-6">Training 5 or more people</h3>
+                                <p class="text-black/50 text-xs">
+                                    Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
+                                </p>
+                            </div>
+    
+                            <hr class="border-t-[#696984]/70 my-6">
+                            <div>
+                                <h3 class="sm:text-2xl text-xl text-black font-semibold mb-6">Share this course</h3>
+                                <div class="flex space-x-2 flex-wrap">
+                                    <div class="w-8 h-8 rounded-full flex items-center justify-center bg-[#1a89e6] text-white">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                    <div class="w-8 h-8 rounded-full flex items-center justify-center bg-[#2d4094] text-white">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </div>
+                                    <div class="w-8 h-8 rounded-full flex items-center justify-center bg-[#fd0101] text-white">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </div>
+                                    <div class="w-8 h-8 rounded-full flex items-center justify-center bg-gradient-to-r from-[#f9d200] via-[#dc1942] to-[#813eb3] text-white">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                    <div class="w-8 h-8 rounded-full flex items-center justify-center bg-[#3eb5e5] text-white">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </div>
+                                    <div class="w-8 h-8 rounded-full flex items-center justify-center bg-[#34cb33] text-white">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-16 leading-relaxed bg-[#9DCCFF33] mt-16">
+        <div class="container mx-auto">
+            <div class="mb-8 flex items-center justify-between">
+                <h4 class="text-2xl font-semibold text-[#252641]">Marketing Articles</h4>
+                <a href="#" class="font-semibold text-[#49BBBD]">See all</a>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+                <div class="p-4 rounded-2xl bg-white shadow-[0px_18px_47px_0px_rgba(47,50,125,0.10)]">
+                    <div>
+                        <img src="./images/blog/Rectangle 3.1.png" alt="">
+                    </div>
+                    <div class="mt-3 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 21" fill="none">
+                                    <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="0.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    </svg>
+                                <span class="text-[#696984] text-sm ml-1">Design</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#D9D9D9] text-xl"></i>
+                                <span class="text-[#696984] text-sm ml-1">3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="sm:text-xl text-base text-[#252641]">AWS Certified solutions Architect</h3>
+                        <p class="text-[#696984]">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <div class="flex items-end justify-between">
+                            <div class="flex items-center">
+                                <img class="rounded-full w-10 mr-4" src="./images/home/image-user.png" alt="">
+                                <p>Lina</p>
+                            </div>
+                            <div>
+                                <span class="text-sm text-black/50 line-through italic font-light">$100</span>
+                                <span class="text-[#49BBBD] text-xl font-bold ml-2">$80</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white shadow-[0px_18px_47px_0px_rgba(47,50,125,0.10)]">
+                    <div>
+                        <img src="./images/CourseDetail/Rectangle 32.png" alt="">
+                    </div>
+                    <div class="mt-3 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 21" fill="none">
+                                    <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="0.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    </svg>
+                                <span class="text-[#696984] text-sm ml-1">Design</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#D9D9D9] text-xl"></i>
+                                <span class="text-[#696984] text-sm ml-1">3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="sm:text-xl text-base text-[#252641]">AWS Certified solutions Architect</h3>
+                        <p class="text-[#696984]">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <div class="flex items-end justify-between">
+                            <div class="flex items-center">
+                                <img class="rounded-full w-10 mr-4" src="./images/home/image-user.png" alt="">
+                                <p>Lina</p>
+                            </div>
+                            <div>
+                                <span class="text-sm text-black/50 line-through italic font-light">$100</span>
+                                <span class="text-[#49BBBD] text-xl font-bold ml-2">$80</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white shadow-[0px_18px_47px_0px_rgba(47,50,125,0.10)]">
+                    <div>
+                        <img src="./images/CourseDetail/Rectangle 33.png" alt="">
+                    </div>
+                    <div class="mt-3 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 21" fill="none">
+                                    <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="0.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    </svg>
+                                <span class="text-[#696984] text-sm ml-1">Design</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#D9D9D9] text-xl"></i>
+                                <span class="text-[#696984] text-sm ml-1">3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="sm:text-xl text-base text-[#252641]">AWS Certified solutions Architect</h3>
+                        <p class="text-[#696984]">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <div class="flex items-end justify-between">
+                            <div class="flex items-center">
+                                <img class="rounded-full w-10 mr-4" src="./images/home/image-user.png" alt="">
+                                <p>Lina</p>
+                            </div>
+                            <div>
+                                <span class="text-sm text-black/50 line-through italic font-light">$100</span>
+                                <span class="text-[#49BBBD] text-xl font-bold ml-2">$80</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white shadow-[0px_18px_47px_0px_rgba(47,50,125,0.10)]">
+                    <div>
+                        <img src="./images/blog/Rectangle 3.3.png" alt="">
+                    </div>
+                    <div class="mt-3 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 21" fill="none">
+                                    <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="0.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="11.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    <rect x="11.5" y="0.5" width="9" height="9" rx="1.5" stroke="#D9D9D9"/>
+                                    </svg>
+                                <span class="text-[#696984] text-sm ml-1">Design</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#D9D9D9] text-xl"></i>
+                                <span class="text-[#696984] text-sm ml-1">3 Month</span>
+                            </div>
+                        </div>
+                        <h3 class="sm:text-xl text-base text-[#252641]">AWS Certified solutions Architect</h3>
+                        <p class="text-[#696984]">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <div class="flex items-end justify-between">
+                            <div class="flex items-center">
+                                <img class="rounded-full w-10 mr-4" src="./images/home/image-user.png" alt="">
+                                <p>Lina</p>
+                            </div>
+                            <div>
+                                <span class="text-sm text-black/50 line-through italic font-light">$100</span>
+                                <span class="text-[#49BBBD] text-xl font-bold ml-2">$80</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Everything you can do in a physical classroom, you can do with TOTC -->
+    <div class="py-24">
+        <div class="container mx-auto">
+            <div class="grid gap-14 md:grid-cols-2 grid-cols-1 items-center">
+                <!-- title -->
+                <div class="relative">
+                    <div class="relative z-10">
+                        <h2 class="text-2xl text-[#2F327D] mb-4 leading-normal">Everything you can do in a physical
+                            classroom, <span class="text-[#00CBB8]">you can do with TOTC
+                            </span></h2>
+                        <p class="text-[#696984] leading-relaxed">
+                            TOTC's school management software helps traditional and online schools manage scheduling,
+                            attendance, payments and virtual classrooms all in one secure cloud-based system.
+                        </p>
+                        <a class="mt-7 text-sm text-[#696984] underline" href="#">Learn more</a>
+                    </div>
+                    <img class="w-16 absolute top-[-20px] left-[-20px]" src="./images/home/Ellipse-green.png" alt="">
+                    <img class="w-6 absolute bottom-1/4 right-[10px]" src="./images/home/Ellipse-green.png" alt="">
+                </div>
+                <div class="relative">
+                    <div class="relative z-10">
+                        <img src="./images/home/confident-teacher-explaining-lesson-pupils 1.png" alt="">
+                        <button
+                            class="text-xl text-[#23BDEE] bg-white h-16 w-16 rounded-full absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"><i
+                                class="fa-solid fa-play"></i></button>
+                    </div>
+                    <img class="w-1/4 absolute top-[-20px] left-[-20px]" src="./images/home/Rectangle 18.png" alt="">
+                    <img class="w-1/3 absolute bottom-[-20px] right-[-20px]" src="./images/home/Rectangle 17.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="md:py-12 py-5">
+        <div class="container mx-auto">
+            <div class="mb-8 flex items-center justify-between">
+                <h4 class="text-2xl font-semibold text-[#252641]">Top  Education offers and deals are listed here</h4>
+                <a href="#" class="font-semibold text-[#49BBBD] min-w-[60px] text-right">See all</a>
+            </div>
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
+                <div class="relative max-w-sm mx-auto">
+                    <img class="filter brightness-75" src="images/CourseDetail/Rectangle 19.png" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full xl:p-10 p-6">
+                        <div class="w-16 h-16 rounded-lg bg-[#FF0000]/60 flex justify-center items-center">
+                            <span class="font-bold text-lg text-white">50%</span>
+                        </div>
+                        <h2 class="xl:text-xl text-lg text-white xl:mt-5 mt-2 xl:mb-6 mb-3 font-semibold">FOR INSTRUCTORS</h2>
+                        <p class="text-white xl:text-base text-sm">
+                            TOTC's school management software helps traditional and online schools manage scheduling,
+                        </p>
+                    </div>
+                </div>
+                <div class="relative max-w-sm mx-auto">
+                    <img class="filter brightness-75" src="images/CourseDetail/Rectangle 19.png" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full xl:p-10 p-6">
+                        <div class="w-16 h-16 rounded-lg bg-[#FF0000]/60 flex justify-center items-center">
+                            <span class="font-bold text-lg text-white">50%</span>
+                        </div>
+                        <h2 class="xl:text-xl text-lg text-white xl:mt-5 mt-2 xl:mb-6 mb-3 font-semibold">FOR INSTRUCTORS</h2>
+                        <p class="text-white xl:text-base text-sm">
+                            TOTC's school management software helps traditional and online schools manage scheduling,
+                        </p>
+                    </div>
+                </div>
+                <div class="relative max-w-sm mx-auto">
+                    <img class="filter brightness-75" src="images/CourseDetail/Rectangle 19.png" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full xl:p-10 p-6">
+                        <div class="w-16 h-16 rounded-lg bg-[#FF0000]/60 flex justify-center items-center">
+                            <span class="font-bold text-lg text-white">50%</span>
+                        </div>
+                        <h2 class="xl:text-xl text-lg text-white xl:mt-5 mt-2 xl:mb-6 mb-3 font-semibold">FOR INSTRUCTORS</h2>
+                        <p class="text-white xl:text-base text-sm">
+                            TOTC's school management software helps traditional and online schools manage scheduling,
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#252641] pt-16 pb-8 text-[#626381] px-5 mt-16">
+        <div class="flex flex-col items-center">
+            <div class="flex items-center">
+                <img class="w-24" src="./images/home/logo.png" alt="">
+                <p class="pl-6 ml-6 border-l border-[#626381] text-white">Virtual Class for Zoom</p>
+            </div>
+            <p class="mt-20 mb-4">Subscribe to get our Newsletter</p>
+            <div class="flex gap-4 flex-wrap items-center">
+                <input type="text"
+                    class="text-base text-white bg-transparent border-[#626381] py-2 px-5 rounded-full outline-none min-w-[240px]"
+                    style="border-width: 1px;" placeholder="Your email">
+                <button
+                    class="text-base text-white bg-[#49BBBD] border-[#626381] py-2 px-5 rounded-full">Subscribe</button>
+            </div>
+            <p class="mt-14 mb-4">Careers | Privacy Policy | Terms & Conditions</p>
+            <p>© 2021 Class Technologies Inc. </p>
+        </div>
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+    <!-- tailwind El -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+    
+    <!-- cdn OwlCarouse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- my js -->
+    <script src="./JavaScript/script.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:24,
+        nav:true,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            640:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            1024:{
+                items:4
+            }
+        }
+        })
+    </script>
+</body>
+
+</html>
