@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="font-['Poppins']">
+    <!-- ---------------header ------------------->
+       <header class="py-7">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-center justify-between">
+                <img class="w-28" src="./images/home/logo2.png" alt="">
+                <button class="btn-show-menu hidden text-xl w-12 h-12 bg-white text-[#5b5b5b] rounded">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <nav class="flex items-center">
+                    <ul class="flex items-center">
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-16">
+                            <img src="./images/home/image-user.png" alt="">
+                        </div>
+                        <p>Lina</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ---------------Banner----------------- -->
+    <section class=" mt-4 ">
+       <div class="xl:container mx-auto ">
+           <div class="xl:flex px-[0.24px] items-center gap-8 h-[400px] bg-[url('./images/literature_course/banner.png')] bg-cover bg-no-repeat rounded-[20px]">
+            <div class=" bg-white hidden   xl:flex  items-center   h-auto rounded-[363px] ml-7">
+                <img class="px-3 py-3 " src="./images/literature_course/woman.png" alt="">
+               </div>
+               <div class=" h-full w-full xl:h-auto xl:rounded-[20px]  flex flex-col justify-center bg-[#FFFFFFCC] bg-opacity-30 mr-6">
+                 <div class="px-12 mb-9">
+                  <div class="flex justify-between items-center mt-[66px]">
+                    <h3 class="  text-[30px] font-medium text-[#000] tracking-[0.6px]">John Anderson</h3>
+                    <button class="rounded-[12px] bg-[#49BBBD] hover:bg-[#6dc9ca] transition ease-in-out duration-300 text-white xl:text-[22px] md:text-[20px] text-lg font-bold h-[63px] w-[183px]">Enroll Now</button>
+                  </div>
+                 <p class="mt-[7px] mb-[15px] text-[#2D3436B2] font-normal xl:text-[16px] md:text-[15px] text-[14px] leading-[32px]">Assistant Professor at Mcmaster University</p>
+                 <p class="mb-[25px] text-[#2D3436]  xl:text-lg md:text-[16px] text-[14px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                    Ut enum ad minim veniam, quis nostrud</p>
+                    <div class="flex gap-[114px] flex-around">
+                        <div class="flex items-center">
+                            <img src="./images/literature_course/star.png" alt="">
+                            <p class="text-[#2D3436CC] text-[12px] font-normal leading-[32px] ">4.9 instructor Rating</p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./images/literature_course/eye.png" alt="">
+                            <p class="text-[#2D3436CC] text-[12px] font-normal leading-[32px]">1,592 Students</p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./images/literature_course/play.png" alt="">
+                            <p class="text-[#2D3436CC] text-[12px] font-normal leading-[32px]">Courses</p>
+                        </div>
+                        <div class="xl:flex gap-4 hidden">
+                             <img class="w-[32px] h-[32px] hover:opacity-30 " src="./images/literature_course/twitter.jpg" alt="">
+                             <img  class="w-[32px] h-[32px]  hover:opacity-30" src="./images/literature_course/youtube.png" alt="">
+                             <img class="w-[32px] h-[32px]  hover:opacity-30"  src="./images/literature_course/instagram.png" alt="">
+                        </div>
+                    </div>
+                 </div>
+               </div>
+
+           </div>
+       </div>
+    </section>
+    <!---------------Course Section----------------->
+    <section class="my-[68px]">
+     <div class="container mx-auto flex  gap-[25.84px]">
+    <button class="btn xl:h-[45px] md:h-[40px] p-2 w-[130px] bg-[#BBBBBB80] rounded-[12px] text-[#696969] align-middle xl:text-lg md:text-[15px] text-[12px] font-bold hover:bg-[#49BBBD] hover:text-white transition duration-300 ease-in-out ">About</button>
+    <button class="btn xl:h-[45px]  md:h-[40px] w-[130px] bg-[#BBBBBB80] rounded-[12px] text-[#696969] align-middle xl:text-lg md:text-[15px] text-[12px] font-bold hover:bg-[#49BBBD] hover:text-white transition duration-300 ease-in-out ">Course</button>
+    <button class="btn xl:h-[45px]  md:h-[40px] w-[130px] bg-[#BBBBBB80] rounded-[12px] text-[#696969] align-middle xl:text-lg md:text-[15px] text-[12px] font-bold hover:bg-[#49BBBD] hover:text-white transition duration-300 ease-in-out ">Notes</button>
+    <button class="btn xl:h-[45px]  md:h-[40px] w-[130px] bg-[#BBBBBB80] rounded-[12px] text-[#696969] align-middle xl:text-lg md:text-[15px] text-[12px] font-bold hover:bg-[#49BBBD] hover:text-white transition duration-300 ease-in-out ">Project</button>
+    <button class="btn xl:h-[45px]  md:h-[40px] w-[130px] bg-[#BBBBBB80] rounded-[12px] text-[#696969] align-middle xl:text-lg md:text-[15px] text-[12px] font-bold hover:bg-[#49BBBD] hover:text-white transition duration-300 ease-in-out ">Podcast</button>
+    <button class="btn  xl:h-[45px]  md:h-[40px] w-[130px] bg-[#BBBBBB80] rounded-[12px] text-[#696969] align-middle xl:text-lg md:text-[15px] text-[12px] font-bold hover:bg-[#49BBBD] hover:text-white transition duration-300 ease-in-out">Book</button>
+    <button class="btn xl:h-[45px]  md:h-[40px] w-[130px] bg-[#BBBBBB80] rounded-[12px] text-[#696969] align-middle xl:text-lg md:text-[15px] text-[12px] font-bold hover:bg-[#49BBBD] hover:text-white transition duration-300 ease-in-out ">Review</button>
+
+     </div>
+    </section>
+    <!--- --------------------------Course Details----------------------------->
+    <section class="mb-[52.39px]">
+       <div class="container mx-auto ">
+           <h3 class="text-[#000] text-[28px] font-medium tracking-[0.6px] mb-[49px] md:text-start text-center">Literature course</h3>
+           <div id="product" class="grid md:grid-cols-3 grid-cols-1 xl:gap-[66px] gap-11 md:gap-x-[10px] md:gap-y-[30px]">
+            <!-- <div class="rounded-[10px]  bg-[white] shadow-2xl shadow-[#b8b8b8] border-[1px] h-auto">
+                <div class="px-7 group overflow-hidden ">
+                   <img class=" mt-[30px] mb-[28.13px] hover:opacity-50 transition duration-300 ease-in-out" src="./images/literature_course/book1.png" alt="">
+                   <div class=" flex justify-between items-center pb-[31.35px]">
+                    <p class="text-[#333333] font-normal tracking-[0.5px] xl:text-[20px] md:text-lg text-[12px]">All Benefits of PLUS</p>
+                    <p class="text-[#6dc9ca] text-[25px] font-semibold tracking-[0.6px]">$24</p>
+                   </div>
+                </div>
+            </div> -->
+            </div>
+       </div>
+    </section>
+    <!-- ----------------------Paging Page ------------------------>
+    <section class="mb-[52px]">
+        <div class="container mx-auto flex justify-center">
+            <button class="btn_pre h-10 w-10 text-xl hover:text-white  bg-[#49BBBD33] hover:bg-[#49BBBD] group"><i class="fa-solid fa-angle-left text-[#49BBBD] group-hover:text-white "></i></button>
+        <div class="numbers">
+            <!-- <button class="h-10 w-10 text-xl  hover:text-white  hover:bg-[#49BBBD]">1</button>
+        <button class="h-10 w-10 text-xl hover:text-white  hover:bg-[#49BBBD]">2</button>
+        <button class="h-10 w-10 text-xl hover:text-white  hover:bg-[#49BBBD]  active bg-[#49BBBD] text-white">3  </button>
+        <button class="h-10 w-10 text-xl hover:text-white  hover:bg-[#49BBBD]">4</button>
+        <button class="h-10 w-10 text-xl hover:text-white  hover:bg-[#49BBBD]">5</button> -->
+        </div>
+        <button class="btn_next h-10 w-10 text-xl   hover:text-white  bg-[#49BBBD33] hover:bg-[#49BBBD] group"><i class="fa-solid fa-angle-right text-[#49BBBD]  group-hover:text-white "></i></button>
+        </div>
+    </section>
+    <!-- ------------------Footer--------------------- -->
+    <footer class="bg-[#252641] pt-16 pb-8 text-[#626381] px-5">
+        <div class="flex flex-col items-center">
+            <div class="flex items-center">
+                <img class="w-24" src="./images/home/logo.png" alt="">
+                <p class="pl-6 ml-6 border-l border-[#626381] text-white">Virtual Class for Zoom</p>
+            </div>
+            <p class="mt-20 mb-4">Subscribe to get our Newsletter</p>
+            <div class="flex gap-4 flex-wrap items-center">
+                <input type="text"
+                    class="text-base text-white bg-transparent border-[#626381] py-2 px-5 rounded-full outline-none min-w-[240px]"
+                    style="border-width: 1px;" placeholder="Your email">
+                <button
+                    class="text-base text-white bg-[#49BBBD] border-[#626381] py-2 px-5 rounded-full">Subscribe</button>
+            </div>
+            <p class="mt-14 mb-4">Careers | Privacy Policy | Terms & Conditions</p>
+            <p>© 2021 Class Technologies Inc. </p>
+        </div>
+    </footer>
+
+    <script src="JavaScript/literature_course.js">
+    </script>
+</body>
+</html>
