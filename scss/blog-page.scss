@@ -1,0 +1,18 @@
+
+.owl-carousel {
+    .owl-nav {
+        text-align: right;
+        margin-top: 32px;
+        .owl-prev,
+        .owl-next {
+            font-size: 42px !important;
+            width: 40px;
+            height: 40px;
+            background-color: #49BBBD !important;
+            line-height: 0px !important;
+            color: #fff !important;
+            border-radius: 6px;
+            margin-left: 16px;
+        }
+    }
+}
