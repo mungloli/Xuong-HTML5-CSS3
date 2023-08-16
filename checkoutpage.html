@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="font-['Poppins']">
+    <!-- header -->
     <header class="py-7">
         <div class="container mx-auto">
             <div class="flex flex-wrap items-center justify-between">
@@ -27,19 +28,36 @@
                     <i class="fa-solid fa-bars"></i>
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-                <nav class="flex items-center">
+
+                <nav class="hidden items-center lg:flex ">
                     <ul class="flex items-center">
                         <li>
-                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Home</a>
+                            <a href="./index.html" class="text-xl text-[#5B5B5B] mr-12">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Courses</a>
+                            <a href="./course.html" class="text-xl text-[#5B5B5B] mr-12">Courses</a>
+                        </li>
+                        <li class="relative group">
+                            <button class="text-xl text-[#5B5B5B] lg:mr-12">
+                                <span>Pages</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="max-h-48 lg:max-h-none absolute z-10 top-full lg:left-0 left-1/2 lg:pt-4 pt-2 duration-300 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 lg:translate-x-0 -translate-x-1/2">
+                                <ul class="max-h-48 lg:max-h-none bg-white p-3 rounded-md shadow w-44 overflow-y-scroll">
+                                    <li><a class="py-1 hover:text-[#00CBB8] block" href="./memberShip.html">MemberShip Page</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./checkoutpage.html">Checkout Page</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./course_calendar_1.html">Course Calendar 1</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./course_calendar_2.html">Course Calendar 2</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./course_calendar.html">Course Calendar</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./course_calendar_view.html">Course Full View</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./meeting.html">Meetting</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./search.html">Search</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./literature_course.html">Literature Course</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
-                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Careers</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Blog</a>
+                            <a href="./blog-page.html" class="text-xl text-[#5B5B5B] mr-12">Blog</a>
                         </li>
                         <li>
                             <a href="#" class="text-xl text-[#5B5B5B] mr-12">About Us</a>
@@ -56,6 +74,8 @@
             </div>
         </div>
     </header>
+
+
     <main class="container mx-auto">
         <div class="py-12 flex flex-col-reverse lg:flex-row gap-5 sm:gap-10 xl:gap-20">
             <div class="lg:w-2/4 xl:w-3/5 shadow-xl p-12 rounded-xl">
