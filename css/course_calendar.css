@@ -1,5 +1,5 @@
 .list_event{
-    left:0;
-    transition: all ease .3s;
+    left:0 !important;
+    transition: all ease;
 }
 

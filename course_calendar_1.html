@@ -22,7 +22,7 @@
 <body class="font-['Poppins'] ">
     <main class="container mx-auto relative">
         <div class="w-full xl:flex bg-[rgba(157,204,255,0.2)]">
-            <div id="list_event" class="absolute -left-full xl:left-0 xl:relative top-0 w-max xl:w-1/3 p-5 bg-white">
+            <div id="list_event" class="absolute -left-full xl:left-0 xl:relative top-0 w-max xl:w-1/3 p-5 duration-300 bg-white">
                 <div class="px-4">
                     <a href=""><button class="hidden xl:block h-12 w-12 bg-[#49BBBD] text-white"><i class="fa-solid fa-arrow-left"></i></button></a>
                 </div>
@@ -236,8 +236,8 @@
             let list=document.getElementById('list_event');
             console.log(btn_list);
             btn_list.addEventListener('click',e=>{
-                list.classList.remove('-left-full')
-                list.classList.add('list_event');
+                // list.classList.remove('-left-full')
+                list.classList.toggle('list_event');
             })
         </script>
 </body>

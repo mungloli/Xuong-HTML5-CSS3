@@ -183,12 +183,64 @@
                             eiusmodeiusmodadipiscing elit, sed do eiusmodLorem eiusmodLorem dolor sit amet, 
                             consectetur adipiscing</p>
                     </div>
-                    
+                    <div class="bg-white md:flex p-7 rounded-xl mt-12">
+                        <div class="md:w-1/2 pr-7">
+                            <img class="w-full" src="./images/course_calendar/Untitled.png" alt="">
+                        </div>
+                        <div class="md:w-1/2 mt-14 md:mt-0 md:pl-7 md:border-l">
+                            <div class="md:text-center">
+                                <h2 class="font-bold md:text-xl">Sep 12, Monday</h2>
+                            </div>
+                            <div class="flex items-center gap-3 mt-10 md:mt-4">
+                                <p class="text-xs xl:text-base">2 PM</p>
+                                <div class="border flex-1 w-full">
+                                </div>
+                            </div>
+                            <div class="h-8 xl:h-12 w-3/5 bg-[#EE645B4D] rounded xl:rounded-xl flex items-center ml-12 px-3">
+                                <p class="text-[#EE645B] text-sm xl:text-base font-medium">Adobe XD Live Class</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <p class="text-sm xl:text-base">3 PM</p>
+                                <div class="border flex-1 w-full"></div>
+                            </div>
+                            <div class="h-8 xl:h-12 w-3/5 rounded-xl flex items-center ml-12 px-3">
+                                <p class=""></p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <p class="text-sm xl:text-base">4 PM</p>
+                                <div class="border flex-1 w-full"></div>
+                            </div>
+                            <div class="h-8 xl:h-12 w-3/5 rounded-xl flex items-center ml-12 px-3">
+                                <p class=""></p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <p class="text-sm xl:text-base">5 PM</p>
+                                <div class="border flex-1 w-full"></div>
+                            </div>
+                            <div class="h-8 xl:h-12 w-3/5 rounded-xl flex items-center ml-12 px-3">
+                                <p class=""></p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <p class="text-sm xl:text-base">6 PM</p>
+                                <div class="border flex-1 w-full"></div>
+                            </div>
+                            <div class="h-8 xl:h-12 w-3/5 rounded-xl flex items-center ml-12 px-3">
+                                <p class=""></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-        <!-- my js -->
-        </script>
+    <script >
+        let btn_list=document.getElementById('btn_list');
+        let list=document.getElementById('list_event');
+        console.log(btn_list);
+        btn_list.addEventListener('click',e=>{
+            // list.classList.remove('-left-full')
+            list.classList.toggle('list_event');
+        })
+    </script>
 </body>
 </html>
