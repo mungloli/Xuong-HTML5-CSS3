@@ -1,5 +1,9 @@
 .list_event{
     left:0 !important;
+<<<<<<< HEAD
     transition: all ease;
+=======
+    transition: all ease .3s;
+>>>>>>> 96fa57bdc212595f9802604c6c12139571b56c99
 }
 

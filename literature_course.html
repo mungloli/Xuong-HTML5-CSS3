@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Literature Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-<link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,7 +18,8 @@
 </head>
 <body class="font-['Poppins']">
     <!-- ---------------header ------------------->
-       <header class="py-7">
+    <!-- header -->
+    <header class="py-7">
         <div class="container mx-auto">
             <div class="flex flex-wrap items-center justify-between">
                 <img class="w-28" src="./images/home/logo2.png" alt="">
@@ -27,19 +28,35 @@
                     <i class="fa-solid fa-xmark"></i>
                 </button>
 
-                <nav class="flex items-center">
+                <nav class="hidden items-center lg:flex ">
                     <ul class="flex items-center">
                         <li>
-                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Home</a>
+                            <a href="./index.html" class="text-xl text-[#5B5B5B] mr-12">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Courses</a>
+                            <a href="./course.html" class="text-xl text-[#5B5B5B] mr-12">Courses</a>
+                        </li>
+                        <li class="relative group">
+                            <button class="text-xl text-[#5B5B5B] lg:mr-12">
+                                <span>Pages</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <div class="max-h-48 lg:max-h-none absolute z-10 top-full lg:left-0 left-1/2 lg:pt-4 pt-2 duration-300 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 lg:translate-x-0 -translate-x-1/2">
+                                <ul class="max-h-48 lg:max-h-none bg-white p-3 rounded-md shadow w-44 overflow-y-scroll">
+                                    <li><a class="py-1 hover:text-[#00CBB8] block" href="./memberShip.html">MemberShip Page</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./checkoutpage.html">Checkout Page</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./course_calendar_1.html">Course Calendar 1</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./course_calendar_2.html">Course Calendar 2</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./course_calendar.html">Course Calendar</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./course_calendar_view.html">Course Full View</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./meeting.html">Meetting</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./search.html">Search</a></li>
+                                    <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./literature_course.html">Literature Course</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
-                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Careers</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Blog</a>
+                            <a href="./blog-page.html" class="text-xl text-[#5B5B5B] mr-12">Blog</a>
                         </li>
                         <li>
                             <a href="#" class="text-xl text-[#5B5B5B] mr-12">About Us</a>
@@ -115,7 +132,7 @@
     <section class="mb-[52.39px]">
        <div class="container mx-auto ">
            <h3 class="text-[#000] text-[28px] font-medium tracking-[0.6px] mb-[49px] md:text-start text-center">Literature course</h3>
-           <div id="product" class="grid md:grid-cols-3 grid-cols-1 xl:gap-[66px] gap-11 md:gap-x-[10px] md:gap-y-[30px]">
+           <div id="product" class="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 xl:gap-[66px] gap-11 md:gap-x-[10px] md:gap-y-[30px]">
             <!-- <div class="rounded-[10px]  bg-[white] shadow-2xl shadow-[#b8b8b8] border-[1px] h-auto">
                 <div class="px-7 group overflow-hidden ">
                    <img class=" mt-[30px] mb-[28.13px] hover:opacity-50 transition duration-300 ease-in-out" src="./images/literature_course/book1.png" alt="">
@@ -164,5 +181,6 @@
 
     <script src="JavaScript/literature_course.js">
     </script>
+    <script src="./JavaScript/script.js"></script>
 </body>
 </html>
