@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog Details</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +16,48 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="font-['Poppins']">
+      <!-- ---------------header ------------------->
+      <header class="py-7">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-center justify-between">
+                <img class="w-28" src="./images/home/logo2.png" alt="">
+                <button class="btn-show-menu hidden text-xl w-12 h-12 bg-white text-[#5b5b5b] rounded">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <nav class="flex items-center">
+                    <ul class="flex items-center">
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-16">
+                            <img src="./images/home/image-user.png" alt="">
+                        </div>
+                        <p>Lina</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
   <!--------------------------- Banner--------------------->
     <section class="banner w-full mb-[80px]">
-      <img src="./images/blog_detail/Rectangle 83.png" alt="">
+      <img src="./images/blog_detail/Rectangle 77.png" alt="">
     </section>
     <!-------------------- blog detail------------------ -->
     <section class=" mb-5">
@@ -140,6 +179,25 @@
               </div>
           </div>
       </section>
+          <!-- ------------------Footer--------------------- -->
+    <footer class="bg-[#252641] pt-16 pb-8 text-[#626381] px-5">
+        <div class="flex flex-col items-center">
+            <div class="flex items-center">
+                <img class="w-24" src="./images/home/logo.png" alt="">
+                <p class="pl-6 ml-6 border-l border-[#626381] text-white">Virtual Class for Zoom</p>
+            </div>
+            <p class="mt-20 mb-4">Subscribe to get our Newsletter</p>
+            <div class="flex gap-4 flex-wrap items-center">
+                <input type="text"
+                    class="text-base text-white bg-transparent border-[#626381] py-2 px-5 rounded-full outline-none min-w-[240px]"
+                    style="border-width: 1px;" placeholder="Your email">
+                <button
+                    class="text-base text-white bg-[#49BBBD] border-[#626381] py-2 px-5 rounded-full">Subscribe</button>
+            </div>
+            <p class="mt-14 mb-4">Careers | Privacy Policy | Terms & Conditions</p>
+            <p>© 2021 Class Technologies Inc. </p>
+        </div>
+    </footer>
     
 </body>
 </html>
