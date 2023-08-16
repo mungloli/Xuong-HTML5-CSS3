@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- OwlCarousel cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="font-['Poppins']">
+    <!-- header -->
+    <header class="py-7">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap items-center justify-between">
+                <img class="w-28" src="./images/home/logo2.png" alt="">
+                <button class="btn-show-menu hidden text-xl w-12 h-12 bg-white text-[#5b5b5b] rounded">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <nav class="items-center hidden lg:flex">
+                    <ul class="flex items-center">
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-xl text-[#5B5B5B] mr-12">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-16">
+                            <img src="./images/home/image-user.png" alt="">
+                        </div>
+                        <p>Lina</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="pt-16 pb-16 bg-[#9DCCFF33] leading-relaxed">
+        <div class="container mx-auto">
+            <div class="flex gap-7 lg:flex-row flex-col">
+                <div class="lg:w-[68%]">
+                    <div class="flex sm:gap-8 gap-2 items-center mb-8">
+                        <button class="h-12 w-12 bg-[#49BBBD] text-white"><i class="fa-solid fa-arrow-left"></i></button>
+                        <div class="grow flex items-center justify-between sm:p-7 p-3 bg-white rounded-2xl">
+                            <div class="text-[#252641]">
+                                <h3 class="sm:text-2xl text-xl font-semibold">UX/UI Design Confrence Meeting</h3>
+                                <p class="sm:text-base text-xs">9 Lesson 6h 30min</p>
+                            </div>
+                            <div class="sm:text-3xl text-xl text[#25264180]">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/meeting/Group 416.png" alt="">
+                    </div>
+                </div>
+                <div class="lg:w-[32%]">
+                    <div class="bg-white pt-8 px-6 pb-4 rounded-2xl">
+                        <h3 class="sm:text-2xl tet-xl text-[#252641] font-semibold">Course Contents</h3>
+                        <div>
+                            <div class="flex items-center justify-between mb-2 mt-5">
+                                <p class="sm:text-sm text-xs text-[#49BBBD]">2/5 COMPLETED</p>
+                                <img class="w-5" src="./images/meeting/icon1.1.png" alt="">
+                            </div>
+                            <div class="grid grid-cols-5 gap-[3px]">
+                                <div class="bg-[#49BBBD] h-[5px]"></div>
+                                <div class="bg-[#49BBBD] h-[5px]"></div>
+                                <div class="bg-[#49BBBD25] h-[5px]"></div>
+                                <div class="bg-[#49BBBD25] h-[5px]"></div>
+                                <div class="bg-[#49BBBD25] h-[5px]"></div>
+                            </div>
+                        </div>
+
+                        <div id="accordionExample">
+                            <div class="border border-[#49BBBD4D] sm:px-5 px-3 py-2 rounded-2xl bg-white mt-2">
+                                <h2 class="mb-0 relative" id="headingOne">
+                                    <button
+                                        class="pb-7 group relative z-10 flex w-full items-center rounded-none border-0 text-left text-base transition text-[#252641] [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#49BBBD] [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        <div class="text-center">
+                                            <h3 class="font-medium sm:text-lg text-base">Get Started</h3>
+                                        </div>
+                                        <span
+                                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#49BBBD] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#49BBBD] dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
+                                                stroke="currentColor" class="h-6 w-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="flex items-center justify-between text-sm absolute bottom-1 left-0 w-full">
+                                        <div><i class="fa-regular fa-clock"></i> <span>2 Hour</span></div>
+                                        <div><i class="fa-solid fa-book-open"></i> <span>5 Lessons</span></div>
+                                    </div>
+                                </h2>
+                                <div id="collapseOne" class="!visible hidden" data-te-collapse-item aria-labelledby="headingOne"
+                                    data-te-parent="#accordionExample">
+                                    <div class="text-[#696984] md:text-base text-sm">
+                                        <ul>
+                                            <li class="flex justify-between items-center py-2 sm:text-sm text-xs text-[#49BBBD]">
+                                                <h4>1. Lorem ipsum dolor sit amet</h4>
+                                                <div class="min-w-[45px] text-right">
+                                                    <p>65:00</p>
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>2. Lorem ipsum dolor</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>3. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>4. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>5. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="border border-[#49BBBD4D] sm:px-5 px-3 py-2 rounded-2xl bg-white mt-2">
+                                <h2 class="mb-0 relative" id="headingTwo">
+                                    <button
+                                        class="pb-7 group relative z-10 flex w-full items-center rounded-none border-0 text-left text-base transition text-[#252641] [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#49BBBD] [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                                        type="button" data-te-collapse-init data-te-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">
+                                        <div class="text-center">
+                                            <h3 class="font-medium sm:text-lg text-base">Illstarator Structuors</h3>
+                                        </div>
+                                        <span
+                                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#49BBBD] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#49BBBD] dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
+                                                stroke="currentColor" class="h-6 w-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="flex items-center justify-between text-sm absolute bottom-1 left-0 w-full">
+                                        <div><i class="fa-regular fa-clock"></i> <span>2 Hour</span></div>
+                                        <div><i class="fa-solid fa-book-open"></i> <span>3 Lessons</span></div>
+                                    </div>
+                                </h2>
+                                <div id="collapseTwo" class="!visible" data-te-collapse-show data-te-collapse-item aria-labelledby="headingTwo"
+                                    
+                                    data-te-parent="#accordionExample">
+                                    <div class="text-[#696984] md:text-base text-sm">
+                                        <ul>
+                                            <li class="flex justify-between items-center py-2 sm:text-sm text-xs text-[#49BBBD]">
+                                                <h4>1. Lorem ipsum dolor sit amet</h4>
+                                                <div class="min-w-[45px] text-right">
+                                                    <p>65:00</p>
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>2. Lorem ipsum dolor</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>3. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="border border-[#49BBBD4D] sm:px-5 px-3 py-2 rounded-2xl bg-white mt-2">
+                                <h2 class="mb-0 relative" id="headingThree">
+                                    <button
+                                        class="pb-7 group relative z-10 flex w-full items-center rounded-none border-0 text-left text-base transition text-[#252641] [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#49BBBD] [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        <div class="text-center">
+                                            <h3 class="font-medium sm:text-lg text-base">Using Illstarator</h3>
+                                        </div>
+                                        <span
+                                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#49BBBD] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#49BBBD] dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
+                                                stroke="currentColor" class="h-6 w-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="flex items-center justify-between text-sm absolute bottom-1 left-0 w-full">
+                                        <div><i class="fa-regular fa-clock"></i> <span>2 Hour</span></div>
+                                        <div><i class="fa-solid fa-book-open"></i> <span>4 Lessons</span></div>
+                                    </div>
+                                </h2>
+                                <div id="collapseThree" class="!visible hidden" data-te-collapse-item aria-labelledby="headingThree"
+                                    data-te-parent="#accordionExample">
+                                    <div class="text-[#696984] md:text-base text-sm">
+                                        <ul>
+                                            <li class="flex justify-between items-center py-2 sm:text-sm text-xs text-[#49BBBD]">
+                                                <h4>1. Lorem ipsum dolor sit amet</h4>
+                                                <div class="min-w-[45px] text-right">
+                                                    <p>65:00</p>
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>2. Lorem ipsum dolor</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>3. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>4. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="border border-[#49BBBD4D] sm:px-5 px-3 py-2 rounded-2xl bg-white mt-2">
+                                <h2 class="mb-0 relative" id="headingFour">
+                                    <button
+                                        class="pb-7 group relative z-10 flex w-full items-center rounded-none border-0 text-left text-base transition text-[#252641] [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#49BBBD] [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        <div class="text-center">
+                                            <h3 class="font-medium sm:text-lg text-base">What is Pandas?</h3>
+                                        </div>
+                                        <span
+                                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#49BBBD] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#49BBBD] dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
+                                                stroke="currentColor" class="h-6 w-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="flex items-center justify-between text-sm absolute bottom-1 left-0 w-full">
+                                        <div><i class="fa-regular fa-clock"></i> <span>2 Hour</span></div>
+                                        <div><i class="fa-solid fa-book-open"></i> <span>5 Lessons</span></div>
+                                    </div>
+                                </h2>
+                                <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour"
+                                    data-te-parent="#accordionExample">
+                                    <div class="text-[#696984] md:text-base text-sm">
+                                        <ul>
+                                            <li class="flex justify-between items-center py-2 sm:text-sm text-xs text-[#49BBBD]">
+                                                <h4>1. Lorem ipsum dolor sit amet</h4>
+                                                <div class="min-w-[45px] text-right">
+                                                    <p>65:00</p>
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>2. Lorem ipsum dolor</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>3. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>4. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>5. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="border border-[#49BBBD4D] sm:px-5 px-3 py-2 rounded-2xl bg-white mt-2">
+                                <h2 class="mb-0 relative" id="headingFive">
+                                    <button
+                                        class="pb-7 group relative z-10 flex w-full items-center rounded-none border-0 text-left text-base transition text-[#252641] [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-te-collapse-collapsed])]:text-[#49BBBD] [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)]"
+                                        type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseFive">
+                                        <div class="text-center">
+                                            <h3 class="font-medium sm:text-lg text-base">Work with Numpy</h3>
+                                        </div>
+                                        <span
+                                            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#49BBBD] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-[#49BBBD] dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5"
+                                                stroke="currentColor" class="h-6 w-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="flex items-center justify-between text-sm absolute bottom-1 left-0 w-full">
+                                        <div><i class="fa-regular fa-clock"></i> <span>2 Hour</span></div>
+                                        <div><i class="fa-solid fa-book-open"></i> <span>5 Lessons</span></div>
+                                    </div>
+                                </h2>
+                                <div id="collapseFive" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFive"
+                                    data-te-parent="#accordionExample">
+                                    <div class="text-[#696984] md:text-base text-sm">
+                                        <ul>
+                                            <li class="flex justify-between items-center py-2 sm:text-sm text-xs text-[#49BBBD]">
+                                                <h4>1. Lorem ipsum dolor sit amet</h4>
+                                                <div class="min-w-[45px] text-right">
+                                                    <p>65:00</p>
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>2. Lorem ipsum dolor</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>3. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>4. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li class="border-t border-[#D9D9D9] flex justify-between items-center py-2 sm:text-sm text-xs text-[#252641]">
+                                                <h4>5. Lorem ipsum dolor sit amet</h4>
+                                                <div class="flex items-center min-w-[52px] text-right">
+                                                    <p class="">65:00</p>
+                                                    <img class="w-3 ml-1 translate-y-[-2px]" src="./images/meeting/icon3.png" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl mt-7">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl text-[#252641] font-semibold">Book for you</h3>
+                            <img class="w-5" src="./images/meeting/icon1.1.png" alt="">
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-4 mt-3">
+                            <div class="shadow-md p-3 rounded-lg max-w-xs mx-auto">
+                                <img src="./images/meeting/Rectangle 33.png" alt="">
+                                <div class="text-center">
+                                    <h4 class="text-[#252641] font-medium mt-1 mb-2">All Benefits of PLUS</h4>
+                                    <p class="text-lg text-[#49BBBD] font-semibold">$24</p>
+                                </div>
+                            </div>
+                            <div class="shadow-md p-3 rounded-lg max-w-xs mx-auto">
+                                <img src="./images/meeting/Rectangle 33.png" alt="">
+                                <div class="text-center">
+                                    <h4 class="text-[#252641] font-medium mt-1 mb-2">All Benefits of PLUS</h4>
+                                    <p class="text-lg text-[#49BBBD] font-semibold">$24</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#252641] pt-16 pb-8 text-[#626381] px-5">
+        <div class="flex flex-col items-center">
+            <div class="flex items-center">
+                <img class="w-24" src="./images/home/logo.png" alt="">
+                <p class="pl-6 ml-6 border-l border-[#626381] text-white">Virtual Class for Zoom</p>
+            </div>
+            <p class="mt-20 mb-4">Subscribe to get our Newsletter</p>
+            <div class="flex gap-4 flex-wrap items-center">
+                <input type="text"
+                    class="text-base text-white bg-transparent border-[#626381] py-2 px-5 rounded-full outline-none min-w-[240px]"
+                    style="border-width: 1px;" placeholder="Your email">
+                <button
+                    class="text-base text-white bg-[#49BBBD] border-[#626381] py-2 px-5 rounded-full">Subscribe</button>
+            </div>
+            <p class="mt-14 mb-4">Careers | Privacy Policy | Terms & Conditions</p>
+            <p>© 2021 Class Technologies Inc. </p>
+        </div>
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+    <!-- tailwind El -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+    
+    <!-- cdn OwlCarouse -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- my js -->
+    <script src="./JavaScript/script.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:24,
+        nav:true,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            640:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            1024:{
+                items:4
+            }
+        }
+        })
+    </script>
+</body>
+
+</html>
