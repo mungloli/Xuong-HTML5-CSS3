@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="font-['Poppins']">
-
     <!-- header -->
     <header class="py-7">
         <div class="container mx-auto">
@@ -30,7 +29,7 @@
                     <i class="fa-solid fa-xmark"></i>
                 </button>
 
-                <nav class="flex items-center">
+                <nav class="hidden items-center lg:flex ">
                     <ul class="flex items-center">
                         <li>
                             <a href="./index.html" class="text-xl text-[#5B5B5B] mr-12">Home</a>
@@ -43,8 +42,8 @@
                                 <span>Pages</span>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </button>
-                            <div class="absolute z-20 top-full lg:left-0 left-1/2 lg:pt-4 pt-2 duration-300 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 lg:translate-x-0 -translate-x-1/2">
-                                <ul class="bg-white p-3 rounded-md shadow w-44">
+                            <div class="max-h-48 lg:max-h-none absolute z-10 top-full lg:left-0 left-1/2 lg:pt-4 pt-2 duration-300 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 lg:translate-x-0 -translate-x-1/2">
+                                <ul class="max-h-48 lg:max-h-none bg-white p-3 rounded-md shadow w-44 overflow-y-scroll">
                                     <li><a class="py-1 hover:text-[#00CBB8] block" href="./memberShip.html">MemberShip Page</a></li>
                                     <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./checkoutpage.html">Checkout Page</a></li>
                                     <li><a class="py-1 hover:text-[#00CBB8] border-t border-[#00CBB8]/50 block" href="./course_calendar_1.html">Course Calendar 1</a></li>
